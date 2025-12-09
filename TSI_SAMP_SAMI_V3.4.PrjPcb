@@ -1972,23 +1972,6 @@ GenerateClassCluster=0
 DocumentUniqueId=MUDILRBF
 
 [Document114]
-DocumentPath=PROJECT PARTS\Power Supply\RES_100K_0603.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MQXRZIRQ
-
-[Document115]
 DocumentPath=PROJECT PARTS\Power Supply\SCHOTTKY_20V_3A_SMB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2005,7 +1988,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document116]
+[Document115]
 DocumentPath=PROJECT PARTS\Power Supply\SCHOTTKY_20V_3A_SMB.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2022,7 +2005,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TDVRPKLF
 
-[Document117]
+[Document116]
 DocumentPath=PROJECT PARTS\Power Supply\SW_PANEL_ROCKER_DPDT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2039,7 +2022,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZWUDDNEF
 
-[Document118]
+[Document117]
 DocumentPath=PROJECT PARTS\Power Supply\SW_SLIDE_RA_TH_DPDT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2056,7 +2039,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KCOLGPFG
 
-[Document119]
+[Document118]
 DocumentPath=PROJECT PARTS\Power Supply\SW_SLIDE_RA_TH_DPDT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2073,7 +2056,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HDETHMJX
 
-[Document120]
+[Document119]
 DocumentPath=PROJECT PARTS\POT_1K_LOG_TH_RA.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2090,7 +2073,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EKTEUNBI
 
-[Document121]
+[Document120]
 DocumentPath=PROJECT PARTS\SWTPcbLib1.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2107,7 +2090,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KWYDQHCD
 
-[Document122]
+[Document121]
 DocumentPath=PROJECT PARTS\SWTPcbLib1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2124,7 +2107,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NLOEDPUF
 
-[Document123]
+[Document122]
 DocumentPath=PROJECT PARTS\POT_1K_LOG_TH_RA.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2141,7 +2124,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TDACWYCH
 
-[Document124]
+[Document123]
 DocumentPath=PROJECT PARTS\Legacy\AAI_PCB.PCB_Library.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2158,7 +2141,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LJSESSJU
 
-[Document125]
+[Document124]
 DocumentPath=PROJECT PARTS\Legacy\AAI_PCB.Schematic_Library.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2175,7 +2158,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TKBGGKCQ
 
-[Document126]
+[Document125]
 DocumentPath=PROJECT PARTS\CONN_DC_JACK_2.1mmID_5.5mmOD_RA_TH.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2192,7 +2175,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SSMODYFK
 
-[Document127]
+[Document126]
 DocumentPath=PROJECT PARTS\CONN_DC_JACK_2.1mmID_5.5mmOD_RA_TH.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2209,7 +2192,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VWWLODYP
 
-[Document128]
+[Document127]
 DocumentPath=PROJECT PARTS\REG_3.3V_SOT_25.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2226,7 +2209,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DNYWXRGZ
 
-[Document129]
+[Document128]
 DocumentPath=PROJECT PARTS\REG_3.3V_SOT_25.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2243,7 +2226,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DSTTISYG
 
-[Document130]
+[Document129]
 DocumentPath=PROJECT PARTS\CAP_1uF_1210.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2260,7 +2243,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QJLMIRIG
 
-[Document131]
+[Document130]
 DocumentPath=PROJECT PARTS\CAP_1uF_1210.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2277,7 +2260,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IRLCSCXD
 
-[Document132]
+[Document131]
 DocumentPath=PROJECT PARTS\SW_MOM_DPDT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2294,7 +2277,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QZXFDZFB
 
-[Document133]
+[Document132]
 DocumentPath=PROJECT PARTS\SW_MOM_DPDT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2311,7 +2294,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EJITUJBW
 
-[Document134]
+[Document133]
 DocumentPath=PROJECT PARTS\IC_SSR_NO_SMD.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2328,7 +2311,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DLJCOUEJ
 
-[Document135]
+[Document134]
 DocumentPath=PROJECT PARTS\IC_SSR_NO_SMD.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2345,7 +2328,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BTDCQAWU
 
-[Document136]
+[Document135]
 DocumentPath=PROJECT PARTS\RES_190R_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2362,7 +2345,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ENOMGDKZ
 
-[Document137]
+[Document136]
 DocumentPath=PROJECT PARTS\RES_190R_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2379,7 +2362,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NUDOWHHN
 
-[Document138]
+[Document137]
 DocumentPath=PROJECT PARTS\MIC_ELECTRET_CASTLE_PAD.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2396,7 +2379,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GVLJTQJA
 
-[Document139]
+[Document138]
 DocumentPath=PROJECT PARTS\MIC_ELECTRET_CASTLE_PAD.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2413,7 +2396,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FYIJOQCY
 
-[Document140]
+[Document139]
 DocumentPath=PROJECT PARTS\RES_20K_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2430,7 +2413,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OJNBLQMN
 
-[Document141]
+[Document140]
 DocumentPath=PROJECT PARTS\RES_20K_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2447,7 +2430,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JFEPMOYY
 
-[Document142]
+[Document141]
 DocumentPath=PROJECT PARTS\CAP_0.47uF_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2464,7 +2447,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OSYKONYI
 
-[Document143]
+[Document142]
 DocumentPath=CAP_0.47uF_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2481,7 +2464,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DWQFJIFR
 
-[Document144]
+[Document143]
 DocumentPath=CAP_470pF_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2498,7 +2481,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JYYLJDWG
 
-[Document145]
+[Document144]
 DocumentPath=PROJECT PARTS\CAP_470pF_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2515,7 +2498,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OTMMLMQB
 
-[Document146]
+[Document145]
 DocumentPath=PROJECT PARTS\CONN_3.5MM_STEREO_DBL_VERT_TH.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2532,7 +2515,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DPHTDHHV
 
-[Document147]
+[Document146]
 DocumentPath=PROJECT PARTS\CONN_3.5MM_STEREO_DBL_VERT_TH.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2549,7 +2532,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TTXBGIUH
 
-[Document148]
+[Document147]
 DocumentPath=PROJECT PARTS\RES_0R_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2566,7 +2549,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LPNNAQCA
 
-[Document149]
+[Document148]
 DocumentPath=PROJECT PARTS\RES_0R_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2583,7 +2566,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=STDKQRTJ
 
-[Document150]
+[Document149]
 DocumentPath=PROJECT PARTS\CONN_SD_CARD_SMD.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2600,7 +2583,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=APMGFFZX
 
-[Document151]
+[Document150]
 DocumentPath=PROJECT PARTS\CONN_SD_CARD_SMD.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2617,7 +2600,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GYOBTQRZ
 
-[Document152]
+[Document151]
 DocumentPath=PROJECT PARTS\SW_SLIDE_SPDT_VERT_TH.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2634,7 +2617,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RUPPVVPN
 
-[Document153]
+[Document152]
 DocumentPath=PROJECT PARTS\SW_SLIDE_SPDT_VERT_TH.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2651,7 +2634,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WHJJWLYG
 
-[Document154]
+[Document153]
 DocumentPath=PROJECT PARTS\RES_10R_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2668,7 +2651,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NSZZOEDN
 
-[Document155]
+[Document154]
 DocumentPath=PROJECT PARTS\RES_10R_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2685,7 +2668,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PRHQHKYG
 
-[Document156]
+[Document155]
 DocumentPath=PROJECT PARTS\CAP_1nF_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2702,7 +2685,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LOZTBLDR
 
-[Document157]
+[Document156]
 DocumentPath=PROJECT PARTS\CAP_1nF_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2719,7 +2702,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XAUAQEHD
 
-[Document158]
+[Document157]
 DocumentPath=PROJECT PARTS\RES_2K1_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2736,7 +2719,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XGLMKWQK
 
-[Document159]
+[Document158]
 DocumentPath=PROJECT PARTS\RES_2K1_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2753,7 +2736,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RYJTQIGD
 
-[Document160]
+[Document159]
 DocumentPath=PROJECT PARTS\RES_3.6M_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2770,7 +2753,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AWKBNZJS
 
-[Document161]
+[Document160]
 DocumentPath=PROJECT PARTS\RES_3.6M_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2787,7 +2770,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SPITQKHW
 
-[Document162]
+[Document161]
 DocumentPath=PROJECT PARTS\CONN_5X_686105183822.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2804,7 +2787,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CDFFKFXY
 
-[Document163]
+[Document162]
 DocumentPath=PROJECT PARTS\CONN_5X_686105183822.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2821,7 +2804,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BAXVTNYN
 
-[Document164]
+[Document163]
 DocumentPath=PROJECT PARTS\SW_TACTILE_SPST-NO.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2838,7 +2821,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document165]
+[Document164]
 DocumentPath=PROJECT PARTS\SW_TACTILE_SPST-NO.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2855,7 +2838,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RDVGTLDU
 
-[Document166]
+[Document165]
 DocumentPath=PROJECT PARTS\CONN_5X_68000-105HTLF.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2872,7 +2855,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BCCKARMU
 
-[Document167]
+[Document166]
 DocumentPath=PROJECT PARTS\CONN_5X_68000-105HTLF.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2889,7 +2872,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BIJAQMRY
 
-[Document168]
+[Document167]
 DocumentPath=PROJECT PARTS\CONN_10X_3220-10-0300-00.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2906,7 +2889,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UDEUBTLH
 
-[Document169]
+[Document168]
 DocumentPath=PROJECT PARTS\CONN_10X_3220-10-0300-00.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2923,7 +2906,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CPBGNRIS
 
-[Document170]
+[Document169]
 DocumentPath=LED_DOME.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2940,7 +2923,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UUSFQGMJ
 
-[Document171]
+[Document170]
 DocumentPath=LED_DOME_SAMP.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2957,7 +2940,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AEYIQIOM
 
-[Document172]
+[Document171]
 DocumentPath=PROJECT PARTS\RES_470R_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2974,7 +2957,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MDQBEVOL
 
-[Document173]
+[Document172]
 DocumentPath=PROJECT PARTS\CAP_3.3nF_0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2991,7 +2974,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UYSPFPYU
 
-[Document174]
+[Document173]
 DocumentPath=PROJECT PARTS\CAP_3.3nF_0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3008,7 +2991,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VJPPKTMO
 
-[Document175]
+[Document174]
 DocumentPath=PROJECT PARTS\CONN_5x2_687310124422.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3025,7 +3008,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BRKDNQSZ
 
-[Document176]
+[Document175]
 DocumentPath=PROJECT PARTS\CONN_5x2_687310124422.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3042,7 +3025,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document177]
+[Document176]
 DocumentPath=LED_DOME_SAMP_4LED.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3059,7 +3042,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OTJKXAQM
 
-[Document178]
+[Document177]
 DocumentPath=LED_DOME_4LED.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3076,7 +3059,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RQXRUIZW
 
-[Document179]
+[Document178]
 DocumentPath=SOT96P240X110-3N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3093,7 +3076,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document180]
+[Document179]
 DocumentPath=MMBT2222A-7-F.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3110,7 +3093,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AWWENPHN
 
-[Document181]
+[Document180]
 DocumentPath=TSI_SAMP_SAMI_V3.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3127,7 +3110,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document182]
+[Document181]
 DocumentPath=PROJECT PARTS\CONN_3.5MM_COMBO.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3144,7 +3127,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=INYXZQVR
 
-[Document183]
+[Document182]
 DocumentPath=PROJECT PARTS\CONN_3.5MM_COMBO.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3161,7 +3144,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MZHSUBEH
 
-[Document184]
+[Document183]
 DocumentPath=TSI_SAMP_SAMI_V3.4.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3178,7 +3161,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document185]
+[Document184]
 DocumentPath=Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4339,16 +4322,448 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=1
+SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=RES_0R_0603.SchLib
-ComponentDesignItemID0=RES_0R_0603
-ComponentSymbolReference0=RES_0R_0603
+ComponentLibraryIdentifier0=CAP_0.01uF_0603.SchLib
+ComponentDesignItemID0=CAP_0.01uF_0603
+ComponentSymbolReference0=CAP_0.01uF_0603
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=CAP_0.047uF_0603.SchLib
+ComponentDesignItemID1=CAP_0.047uF_0603
+ComponentSymbolReference1=CAP_0.047uF_0603
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=CAP_0.1uF_0603.SchLib
+ComponentDesignItemID2=CAP_0.1uF_0603
+ComponentSymbolReference2=CAP_0.1uF_0603
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=CAP_0.47uF_0603.SchLib
+ComponentDesignItemID3=CAP_0.47uF_0603
+ComponentSymbolReference3=CAP_0.47uF_0603
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=CAP_100pF_0603.SchLib
+ComponentDesignItemID4=CAP_100pF_0603
+ComponentSymbolReference4=CAP_100pF_0603
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=CAP_10nF_0603.SchLib
+ComponentDesignItemID5=CAP_10nF_0603
+ComponentSymbolReference5=CAP_10nF_0603
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=CAP_10uF_0603.SchLib
+ComponentDesignItemID6=CAP_10uF_0603
+ComponentSymbolReference6=CAP_10uF_0603
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=CAP_15pF_0603.SchLib
+ComponentDesignItemID7=CAP_15pF_0603
+ComponentSymbolReference7=CAP_15pF_0603
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=CAP_1nF_0603.SchLib
+ComponentDesignItemID8=CAP_1nF_0603
+ComponentSymbolReference8=CAP_1nF_0603
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=CAP_1uF_0603.SchLib
+ComponentDesignItemID9=CAP_1uF_0603
+ComponentSymbolReference9=CAP_1uF_0603
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
+ComponentLibIdentifierKind10=Library Name And Type
+ComponentLibraryIdentifier10=CAP_1uF_1210.SchLib
+ComponentDesignItemID10=CAP_1uF_1210
+ComponentSymbolReference10=CAP_1uF_1210
+ComponentUpdate10=1
+ComponentIsDeviceSheet10=0
+ComponentLibIdentifierKind11=Library Name And Type
+ComponentLibraryIdentifier11=CAP_22pF_0603.SchLib
+ComponentDesignItemID11=CAP_22pF_0603
+ComponentSymbolReference11=CAP_22pF_0603
+ComponentUpdate11=1
+ComponentIsDeviceSheet11=0
+ComponentLibIdentifierKind12=Library Name And Type
+ComponentLibraryIdentifier12=CAP_3.3nF_0603.SchLib
+ComponentDesignItemID12=CAP_3.3nF_0603
+ComponentSymbolReference12=CAP_3.3nF_0603
+ComponentUpdate12=1
+ComponentIsDeviceSheet12=0
+ComponentLibIdentifierKind13=Library Name And Type
+ComponentLibraryIdentifier13=CAP_470pF_0603.SchLib
+ComponentDesignItemID13=CAP_470pF_0603
+ComponentSymbolReference13=CAP_470pF_0603
+ComponentUpdate13=1
+ComponentIsDeviceSheet13=0
+ComponentLibIdentifierKind14=Library Name And Type
+ComponentLibraryIdentifier14=CONN_10X_3220-10-0300-00.SchLib
+ComponentDesignItemID14=3220-10-0300-00
+ComponentSymbolReference14=3220-10-0300-00
+ComponentUpdate14=1
+ComponentIsDeviceSheet14=0
+ComponentLibIdentifierKind15=Library Name And Type
+ComponentLibraryIdentifier15=CONN_3.5MM_COMBO.SchLib
+ComponentDesignItemID15=CONN_3.5MM_COMBO
+ComponentSymbolReference15=CONN_3.5MM_COMBO
+ComponentUpdate15=1
+ComponentIsDeviceSheet15=0
+ComponentLibIdentifierKind16=Library Name And Type
+ComponentLibraryIdentifier16=CONN_3.5MM_STEREO_DBL_VERT_TH.SchLib
+ComponentDesignItemID16=CONN_3.5MM_STEREO_DBL_VERT_TH
+ComponentSymbolReference16=CONN_3.5MM_STEREO_DBL_VERT_TH
+ComponentUpdate16=1
+ComponentIsDeviceSheet16=0
+ComponentLibIdentifierKind17=Library Name And Type
+ComponentLibraryIdentifier17=CONN_5X_68000-105HTLF.SchLib
+ComponentDesignItemID17=68000-105HTLF
+ComponentSymbolReference17=68000-105HTLF
+ComponentUpdate17=1
+ComponentIsDeviceSheet17=0
+ComponentLibIdentifierKind18=Library Name And Type
+ComponentLibraryIdentifier18=CONN_5x2_687310124422.SchLib
+ComponentDesignItemID18=687310124422
+ComponentSymbolReference18=687310124422
+ComponentUpdate18=1
+ComponentIsDeviceSheet18=0
+ComponentLibIdentifierKind19=Library Name And Type
+ComponentLibraryIdentifier19=CONN_DC_JACK_2.1mmID_5.5mmOD_RA_TH.SchLib
+ComponentDesignItemID19=CONN_DC_JACK_2.1mmID_5.5mmOD_RA_TH
+ComponentSymbolReference19=CONN_DC_JACK_2.1mmID_5.5mmOD_RA_TH
+ComponentUpdate19=1
+ComponentIsDeviceSheet19=0
+ComponentLibIdentifierKind20=Library Name And Type
+ComponentLibraryIdentifier20=CONN_JACK_STEREO_3.5MM_SPDT_RA.SchLib
+ComponentDesignItemID20=CONN_JACK_STEREO_3.5MM_SPDT_RA
+ComponentSymbolReference20=CONN_JACK_STEREO_3.5MM_SPDT_RA
+ComponentUpdate20=1
+ComponentIsDeviceSheet20=0
+ComponentLibIdentifierKind21=Library Name And Type
+ComponentLibraryIdentifier21=CONN_SD_CARD_SMD.SchLib
+ComponentDesignItemID21=CONN_SD_CARD_SMD
+ComponentSymbolReference21=CONN_SD_CARD_SMD
+ComponentUpdate21=1
+ComponentIsDeviceSheet21=0
+ComponentLibIdentifierKind22=Library Name And Type
+ComponentLibraryIdentifier22=CONN_TP_SMD.SchLib
+ComponentDesignItemID22=CONN_TP_SMD
+ComponentSymbolReference22=CONN_TP_SMD
+ComponentUpdate22=1
+ComponentIsDeviceSheet22=0
+ComponentLibIdentifierKind23=Library Name And Type
+ComponentLibraryIdentifier23=ENC_ROTARY_20PPR_TH.SchLib
+ComponentDesignItemID23=ENC_ROTARY_20PPR_TH
+ComponentSymbolReference23=ENC_ROTARY_20PPR_TH
+ComponentUpdate23=1
+ComponentIsDeviceSheet23=0
+ComponentLibIdentifierKind24=Library Name And Type
+ComponentLibraryIdentifier24=FER_8A_4mOHM_0603.SchLib
+ComponentDesignItemID24=FER_8A_4mOHM_0603
+ComponentSymbolReference24=FER_8A_4mOHM_0603
+ComponentUpdate24=1
+ComponentIsDeviceSheet24=0
+ComponentLibIdentifierKind25=Library Name And Type
+ComponentLibraryIdentifier25=IC_BUF_ESD_CD74HC4050MT.SchLib
+ComponentDesignItemID25=IC_BUF_ESD_CD74HC4050MT
+ComponentSymbolReference25=IC_BUF_ESD_CD74HC4050MT
+ComponentUpdate25=1
+ComponentIsDeviceSheet25=0
+ComponentLibIdentifierKind26=Library Name And Type
+ComponentLibraryIdentifier26=IC_DEBOUNCE_8IN8OUT_SMD.SchLib
+ComponentDesignItemID26=MAX6818EAP+T
+ComponentSymbolReference26=MAX6818EAP+T
+ComponentUpdate26=1
+ComponentIsDeviceSheet26=0
+ComponentLibIdentifierKind27=Library Name And Type
+ComponentLibraryIdentifier27=IC_MDBT50Q-1M_SMD.SchLib
+ComponentDesignItemID27=IC_MDBT50Q-1M_SMD
+ComponentSymbolReference27=IC_MDBT50Q-1M_SMD
+ComponentUpdate27=1
+ComponentIsDeviceSheet27=0
+ComponentLibIdentifierKind28=Library Name And Type
+ComponentLibraryIdentifier28=IC_REG_LINEAR_3V3_1V8_SMD.SchLib
+ComponentDesignItemID28=IC_REG_LINEAR_3V3_1V8_SMD
+ComponentSymbolReference28=IC_REG_LINEAR_3V3_1V8_SMD
+ComponentUpdate28=1
+ComponentIsDeviceSheet28=0
+ComponentLibIdentifierKind29=Library Name And Type
+ComponentLibraryIdentifier29=IC_SSR_NO_SMD.SchLib
+ComponentDesignItemID29=IC_SSR_NO_SMD
+ComponentSymbolReference29=IC_SSR_NO_SMD
+ComponentUpdate29=1
+ComponentIsDeviceSheet29=0
+ComponentLibIdentifierKind30=Library Name And Type
+ComponentLibraryIdentifier30=IC_VS1053B_LQFP48.SchLib
+ComponentDesignItemID30=IC_VS1053B_LQFP48
+ComponentSymbolReference30=IC_VS1053B_LQFP48
+ComponentUpdate30=1
+ComponentIsDeviceSheet30=0
+ComponentLibIdentifierKind31=Library Name And Type
+ComponentLibraryIdentifier31=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID31=BC848CLT1G
+ComponentSymbolReference31=BC848CLT1G
+ComponentUpdate31=1
+ComponentIsDeviceSheet31=0
+ComponentLibIdentifierKind32=Library Name And Type
+ComponentLibraryIdentifier32=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID32=CAP 2.2uF 0603 16V X7R 10%
+ComponentSymbolReference32=CAP 2.2uF 0603 16V X7R 10%
+ComponentUpdate32=1
+ComponentIsDeviceSheet32=0
+ComponentLibIdentifierKind33=Library Name And Type
+ComponentLibraryIdentifier33=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID33=CAP ALUM 330UF 20% 50V SMD
+ComponentSymbolReference33=CAP ALUM 330UF 20% 50V SMD
+ComponentUpdate33=1
+ComponentIsDeviceSheet33=0
+ComponentLibIdentifierKind34=Library Name And Type
+ComponentLibraryIdentifier34=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID34=CAP CER 10UF 16V X7R 1206
+ComponentSymbolReference34=CAP CER 10UF 16V X7R 1206
+ComponentUpdate34=1
+ComponentIsDeviceSheet34=0
+ComponentLibIdentifierKind35=Library Name And Type
+ComponentLibraryIdentifier35=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID35=FERRITE BEAD 220 OHM 0805 1LN
+ComponentSymbolReference35=FERRITE BEAD 220 OHM 0805 1LN
+ComponentUpdate35=1
+ComponentIsDeviceSheet35=0
+ComponentLibIdentifierKind36=Library Name And Type
+ComponentLibraryIdentifier36=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID36=MAX9744
+ComponentSymbolReference36=MAX9744
+ComponentUpdate36=1
+ComponentIsDeviceSheet36=0
+ComponentLibIdentifierKind37=Library Name And Type
+ComponentLibraryIdentifier37=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID37=TERM BLK 2P SIDE ENT 2.54MM PCB
+ComponentSymbolReference37=TERM BLK 2P SIDE ENT 2.54MM PCB
+ComponentUpdate37=1
+ComponentIsDeviceSheet37=0
+ComponentLibIdentifierKind38=Library Name And Type
+ComponentLibraryIdentifier38=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID38=TERM BLK 4P SIDE ENT 2.54MM PCB
+ComponentSymbolReference38=TERM BLK 4P SIDE ENT 2.54MM PCB
+ComponentUpdate38=1
+ComponentIsDeviceSheet38=0
+ComponentLibIdentifierKind39=Library Name And Type
+ComponentLibraryIdentifier39=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID39=TEST POINT ROUND SMD 0.6mm
+ComponentSymbolReference39=TEST POINT ROUND SMD 0.6mm
+ComponentUpdate39=1
+ComponentIsDeviceSheet39=0
+ComponentLibIdentifierKind40=Library Name And Type
+ComponentLibraryIdentifier40=Intercom Gen2 Main PCB.SCHLIB
+ComponentDesignItemID40=TPD2E007DCKR
+ComponentSymbolReference40=TPD2E007DCKR
+ComponentUpdate40=1
+ComponentIsDeviceSheet40=0
+ComponentLibIdentifierKind41=Library Name And Type
+ComponentLibraryIdentifier41=LCD_Screen_16x2.SchLib
+ComponentDesignItemID41=LCD_Screen_16x2
+ComponentSymbolReference41=LCD_Screen_16x2
+ComponentUpdate41=1
+ComponentIsDeviceSheet41=0
+ComponentLibIdentifierKind42=Library Name And Type
+ComponentLibraryIdentifier42=LED_0603_SMD.SchLib
+ComponentDesignItemID42=LED_GREEN_0603
+ComponentSymbolReference42=LED_GREEN_0603
+ComponentUpdate42=1
+ComponentIsDeviceSheet42=0
+ComponentLibIdentifierKind43=Library Name And Type
+ComponentLibraryIdentifier43=LED_0603_SMD.SchLib
+ComponentDesignItemID43=LED_RED_0603
+ComponentSymbolReference43=LED_RED_0603
+ComponentUpdate43=1
+ComponentIsDeviceSheet43=0
+ComponentLibIdentifierKind44=Library Name And Type
+ComponentLibraryIdentifier44=LED_DOME_4LED.SchLib
+ComponentDesignItemID44=LED Dome_4LED
+ComponentSymbolReference44=LED Dome_4LED
+ComponentUpdate44=1
+ComponentIsDeviceSheet44=0
+ComponentLibIdentifierKind45=Library Name And Type
+ComponentLibraryIdentifier45=LIPO-CHARGING_8.4V_10DFN.SchLib
+ComponentDesignItemID45=LIPO-CHARGING_8.4V_10DFN
+ComponentSymbolReference45=LIPO-CHARGING_8.4V_10DFN
+ComponentUpdate45=1
+ComponentIsDeviceSheet45=0
+ComponentLibIdentifierKind46=Library Name And Type
+ComponentLibraryIdentifier46=MIC_ELECTRET_CASTLE_PAD.SchLib
+ComponentDesignItemID46=MIC_ELECTRET_CASTLE_PAD
+ComponentSymbolReference46=MIC_ELECTRET_CASTLE_PAD
+ComponentUpdate46=1
+ComponentIsDeviceSheet46=0
+ComponentLibIdentifierKind47=Library Name And Type
+ComponentLibraryIdentifier47=Miscellaneous Devices.IntLib
+ComponentDesignItemID47=Res3
+ComponentSymbolReference47=Res3
+ComponentUpdate47=1
+ComponentIsDeviceSheet47=0
+ComponentLibIdentifierKind48=Library Name And Type
+ComponentLibraryIdentifier48=MOSFET_P-CH_20V_SOT23.SchLib
+ComponentDesignItemID48=MOSFET_P-CH_20V_3.6A_SOT23
+ComponentSymbolReference48=MOSFET_P-CH_20V_3.6A_SOT23
+ComponentUpdate48=1
+ComponentIsDeviceSheet48=0
+ComponentLibIdentifierKind49=Library Name And Type
+ComponentLibraryIdentifier49=POT_1K_LOG_TH_RA.SchLib
+ComponentDesignItemID49=POT_1K_LOG_TH_RA
+ComponentSymbolReference49=POT_1K_LOG_TH_RA
+ComponentUpdate49=1
+ComponentIsDeviceSheet49=0
+ComponentLibIdentifierKind50=Library Name And Type
+ComponentLibraryIdentifier50=RC_ControllerV.2.SchLib
+ComponentDesignItemID50=XTAL - 32.768kHz ECS-.327-12.5-34B-TR
+ComponentSymbolReference50=XTAL - 32.768kHz ECS-.327-12.5-34B-TR
+ComponentUpdate50=1
+ComponentIsDeviceSheet50=0
+ComponentLibIdentifierKind51=Library Name And Type
+ComponentLibraryIdentifier51=REG_3.3V_D2PAK.SchLib
+ComponentDesignItemID51=3.3V_REG_D2PAK
+ComponentSymbolReference51=3.3V_REG_D2PAK
+ComponentUpdate51=1
+ComponentIsDeviceSheet51=0
+ComponentLibIdentifierKind52=Library Name And Type
+ComponentLibraryIdentifier52=RES_0R_0603.SchLib
+ComponentDesignItemID52=RES_0R_0603
+ComponentSymbolReference52=RES_0R_0603
+ComponentUpdate52=1
+ComponentIsDeviceSheet52=0
+ComponentLibIdentifierKind53=Library Name And Type
+ComponentLibraryIdentifier53=RES_100K_0603.SchLib
+ComponentDesignItemID53=RES_100K_0603
+ComponentSymbolReference53=RES_100K_0603
+ComponentUpdate53=1
+ComponentIsDeviceSheet53=0
+ComponentLibIdentifierKind54=Library Name And Type
+ComponentLibraryIdentifier54=RES_100R_0603.SchLib
+ComponentDesignItemID54=RES_100R_0603
+ComponentSymbolReference54=RES_100R_0603
+ComponentUpdate54=1
+ComponentIsDeviceSheet54=0
+ComponentLibIdentifierKind55=Library Name And Type
+ComponentLibraryIdentifier55=RES_10K_0603.SchLib
+ComponentDesignItemID55=RES_10K_0603
+ComponentSymbolReference55=RES_10K_0603
+ComponentUpdate55=1
+ComponentIsDeviceSheet55=0
+ComponentLibIdentifierKind56=Library Name And Type
+ComponentLibraryIdentifier56=RES_10R_0603.SchLib
+ComponentDesignItemID56=RES_10R_0603
+ComponentSymbolReference56=RES_10R_0603
+ComponentUpdate56=1
+ComponentIsDeviceSheet56=0
+ComponentLibIdentifierKind57=Library Name And Type
+ComponentLibraryIdentifier57=RES_190R_0603.SchLib
+ComponentDesignItemID57=RES_190R_0603
+ComponentSymbolReference57=RES_190R_0603
+ComponentUpdate57=1
+ComponentIsDeviceSheet57=0
+ComponentLibIdentifierKind58=Library Name And Type
+ComponentLibraryIdentifier58=RES_1K_0603.SchLib
+ComponentDesignItemID58=RES_1K_0603
+ComponentSymbolReference58=RES_1K_0603
+ComponentUpdate58=1
+ComponentIsDeviceSheet58=0
+ComponentLibIdentifierKind59=Library Name And Type
+ComponentLibraryIdentifier59=RES_1M_0603.SchLib
+ComponentDesignItemID59=RES_1M_0603
+ComponentSymbolReference59=RES_1M_0603
+ComponentUpdate59=1
+ComponentIsDeviceSheet59=0
+ComponentLibIdentifierKind60=Library Name And Type
+ComponentLibraryIdentifier60=RES_20K_0603.SchLib
+ComponentDesignItemID60=RES_20K_0603
+ComponentSymbolReference60=RES_20K_0603
+ComponentUpdate60=1
+ComponentIsDeviceSheet60=0
+ComponentLibIdentifierKind61=Library Name And Type
+ComponentLibraryIdentifier61=RES_22R_0603.SchLib
+ComponentDesignItemID61=RES_22R_0603
+ComponentSymbolReference61=RES_22R_0603
+ComponentUpdate61=1
+ComponentIsDeviceSheet61=0
+ComponentLibIdentifierKind62=Library Name And Type
+ComponentLibraryIdentifier62=RES_2K1_0603.SchLib
+ComponentDesignItemID62=RES_2K1_0603
+ComponentSymbolReference62=RES_2K1_0603
+ComponentUpdate62=1
+ComponentIsDeviceSheet62=0
+ComponentLibIdentifierKind63=Library Name And Type
+ComponentLibraryIdentifier63=RES_3.6M_0603.SchLib
+ComponentDesignItemID63=RES_3.6M_0603
+ComponentSymbolReference63=RES_3.6M_0603
+ComponentUpdate63=1
+ComponentIsDeviceSheet63=0
+ComponentLibIdentifierKind64=Library Name And Type
+ComponentLibraryIdentifier64=res_470R_0603.SchLib
+ComponentDesignItemID64=RES_470_0603
+ComponentSymbolReference64=RES_470_0603
+ComponentUpdate64=1
+ComponentIsDeviceSheet64=0
+ComponentLibIdentifierKind65=Library Name And Type
+ComponentLibraryIdentifier65=RES_4K7_0603.SchLib
+ComponentDesignItemID65=RES_4K7_0603
+ComponentSymbolReference65=RES_4K7_0603
+ComponentUpdate65=1
+ComponentIsDeviceSheet65=0
+ComponentLibIdentifierKind66=Library Name And Type
+ComponentLibraryIdentifier66=SCHOTTKY_20V_3A_SMB.SchLib
+ComponentDesignItemID66=SCHOTTKY_20V_3A_SMB
+ComponentSymbolReference66=SCHOTTKY_20V_3A_SMB
+ComponentUpdate66=1
+ComponentIsDeviceSheet66=0
+ComponentLibIdentifierKind67=Library Name And Type
+ComponentLibraryIdentifier67=SW_SLIDE_RA_TH_DPDT.SchLib
+ComponentDesignItemID67=SW_SLIDE_RA_TH_DPDT
+ComponentSymbolReference67=SW_SLIDE_RA_TH_DPDT
+ComponentUpdate67=1
+ComponentIsDeviceSheet67=0
+ComponentLibIdentifierKind68=Library Name And Type
+ComponentLibraryIdentifier68=SW_SLIDE_SPDT_VERT_TH.SchLib
+ComponentDesignItemID68=SW_SLIDE_SPDT_VERT_TH
+ComponentSymbolReference68=SW_SLIDE_SPDT_VERT_TH
+ComponentUpdate68=1
+ComponentIsDeviceSheet68=0
+ComponentLibIdentifierKind69=Library Name And Type
+ComponentLibraryIdentifier69=SW_TACTILE_SPST-NO.SchLib
+ComponentDesignItemID69=SW_TACTILE_SPST-NO
+ComponentSymbolReference69=SW_TACTILE_SPST-NO
+ComponentUpdate69=1
+ComponentIsDeviceSheet69=0
+ComponentLibIdentifierKind70=Library Name And Type
+ComponentLibraryIdentifier70=TAG_CONNECT_TC2030.SchLib
+ComponentDesignItemID70=TAG_CONNECT_TC2030
+ComponentSymbolReference70=TAG_CONNECT_TC2030
+ComponentUpdate70=1
+ComponentIsDeviceSheet70=0
+ComponentLibIdentifierKind71=Library Name And Type
+ComponentLibraryIdentifier71=XTAL_12.288MHz_SMD.SchLib
+ComponentDesignItemID71=XTAL_12.288MHz_SMD
+ComponentSymbolReference71=XTAL_12.288MHz_SMD
+ComponentUpdate71=1
+ComponentIsDeviceSheet71=0
+ComponentLibIdentifierKind72=Vault Name
+ComponentLibraryIdentifier72=Altium Content Vault
+ComponentDesignItemID72=CMP-2000-05172-1
+ComponentSymbolReference72=CAP-P-2
+ComponentUpdate72=1
+ComponentIsDeviceSheet72=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -4362,23 +4777,706 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-ParameterName0=Comment
+ParameterName0=Accuracy
 ParameterUpdate0=1
-ParameterName1=Component Kind
+ParameterName1=Actuator Color
 ParameterUpdate1=1
-ParameterName2=Description
+ParameterName2=Actuator Length
 ParameterUpdate2=1
-ParameterName3=Library Reference
+ParameterName3=Actuator Type
 ParameterUpdate3=1
-ParameterName4=Supplier 1
+ParameterName4=Application(s)
 ParameterUpdate4=1
-ParameterName5=Supplier Part Number 1
+ParameterName5=Availability
 ParameterUpdate5=1
+ParameterName6=Average Rectified Current
+ParameterUpdate6=1
+ParameterName7=Battery Pack Voltage
+ParameterUpdate7=1
+ParameterName8=Body Depth
+ParameterUpdate8=1
+ParameterName9=Capacitance
+ParameterUpdate9=1
+ParameterName10=Case Code
+ParameterUpdate10=1
+ParameterName11=Case Code (Imperial)
+ParameterUpdate11=1
+ParameterName12=Case Code (Metric)
+ParameterUpdate12=1
+ParameterName13=Case/Package
+ParameterUpdate13=1
+ParameterName14=Catalog Drawings
+ParameterUpdate14=1
+ParameterName15=Category
+ParameterUpdate15=1
+ParameterName16=Check_prices
+ParameterUpdate16=1
+ParameterName17=Color
+ParameterUpdate17=1
+ParameterName18=Comment
+ParameterUpdate18=1
+ParameterName19=Component Kind
+ParameterUpdate19=1
+ParameterName20=ComponentLink10Description
+ParameterUpdate20=1
+ParameterName21=ComponentLink10URL
+ParameterUpdate21=1
+ParameterName22=ComponentLink11Description
+ParameterUpdate22=1
+ParameterName23=ComponentLink11URL
+ParameterUpdate23=1
+ParameterName24=ComponentLink12Description
+ParameterUpdate24=1
+ParameterName25=ComponentLink12URL
+ParameterUpdate25=1
+ParameterName26=ComponentLink13Description
+ParameterUpdate26=1
+ParameterName27=ComponentLink13URL
+ParameterUpdate27=1
+ParameterName28=ComponentLink14Description
+ParameterUpdate28=1
+ParameterName29=ComponentLink14URL
+ParameterUpdate29=1
+ParameterName30=ComponentLink15Description
+ParameterUpdate30=1
+ParameterName31=ComponentLink15URL
+ParameterUpdate31=1
+ParameterName32=ComponentLink16Description
+ParameterUpdate32=1
+ParameterName33=ComponentLink16URL
+ParameterUpdate33=1
+ParameterName34=ComponentLink17Description
+ParameterUpdate34=1
+ParameterName35=ComponentLink17URL
+ParameterUpdate35=1
+ParameterName36=ComponentLink18Description
+ParameterUpdate36=1
+ParameterName37=ComponentLink18URL
+ParameterUpdate37=1
+ParameterName38=ComponentLink19Description
+ParameterUpdate38=1
+ParameterName39=ComponentLink19URL
+ParameterUpdate39=1
+ParameterName40=ComponentLink1Description
+ParameterUpdate40=1
+ParameterName41=ComponentLink1URL
+ParameterUpdate41=1
+ParameterName42=ComponentLink20Description
+ParameterUpdate42=1
+ParameterName43=ComponentLink20URL
+ParameterUpdate43=1
+ParameterName44=ComponentLink21Description
+ParameterUpdate44=1
+ParameterName45=ComponentLink21URL
+ParameterUpdate45=1
+ParameterName46=ComponentLink2Description
+ParameterUpdate46=1
+ParameterName47=ComponentLink2URL
+ParameterUpdate47=1
+ParameterName48=ComponentLink3Description
+ParameterUpdate48=1
+ParameterName49=ComponentLink3URL
+ParameterUpdate49=1
+ParameterName50=ComponentLink4Description
+ParameterUpdate50=1
+ParameterName51=ComponentLink4URL
+ParameterUpdate51=1
+ParameterName52=ComponentLink5Description
+ParameterUpdate52=1
+ParameterName53=ComponentLink5URL
+ParameterUpdate53=1
+ParameterName54=ComponentLink6Description
+ParameterUpdate54=1
+ParameterName55=ComponentLink6URL
+ParameterUpdate55=1
+ParameterName56=ComponentLink7Description
+ParameterUpdate56=1
+ParameterName57=ComponentLink7URL
+ParameterUpdate57=1
+ParameterName58=ComponentLink8Description
+ParameterUpdate58=1
+ParameterName59=ComponentLink8URL
+ParameterUpdate59=1
+ParameterName60=ComponentLink9Description
+ParameterUpdate60=1
+ParameterName61=ComponentLink9URL
+ParameterUpdate61=1
+ParameterName62=Construction
+ParameterUpdate62=1
+ParameterName63=Contact Current Rating
+ParameterUpdate63=1
+ParameterName64=Contact Plating
+ParameterUpdate64=1
+ParameterName65=Contact Resistance
+ParameterUpdate65=1
+ParameterName66=Continuous Drain Current (ID)
+ParameterUpdate66=1
+ParameterName67=Current - Receiving
+ParameterUpdate67=1
+ParameterName68=Current - Transmitting
+ParameterUpdate68=1
+ParameterName69=Current Rating
+ParameterUpdate69=1
+ParameterName70=Data Rate
+ParameterUpdate70=1
+ParameterName71=Datasheet Link
+ParameterUpdate71=1
+ParameterName72=Datasheet URL
+ParameterUpdate72=1
+ParameterName73=Datasheet Version
+ParameterUpdate73=1
+ParameterName74=Depth
+ParameterUpdate74=1
+ParameterName75=Description
+ParameterUpdate75=1
+ParameterName76=Dielectric
+ParameterUpdate76=1
+ParameterName77=Dielectric Material
+ParameterUpdate77=1
+ParameterName78=Digi-Key_Part_Number
+ParameterUpdate78=1
+ParameterName79=Digi-Key_Purchase_URL
+ParameterUpdate79=1
+ParameterName80=Diode Element Material
+ParameterUpdate80=1
+ParameterName81=Diode Type
+ParameterUpdate81=1
+ParameterName82=Dissipation Factor
+ParameterUpdate82=1
+ParameterName83=Drain to Source Voltage (Vdss)
+ParameterUpdate83=1
+ParameterName84=Dropout Voltage
+ParameterUpdate84=1
+ParameterName85=Electrical Life
+ParameterUpdate85=1
+ParameterName86=Element Configuration
+ParameterUpdate86=1
+ParameterName87=ESR (Equivalent Series Resistance)
+ParameterUpdate87=1
+ParameterName88=Family
+ParameterUpdate88=1
+ParameterName89=Fault Protection
+ParameterUpdate89=1
+ParameterName90=Features
+ParameterUpdate90=1
+ParameterName91=For Use With/Related Manufacturer
+ParameterUpdate91=1
+ParameterName92=Forward Current
+ParameterUpdate92=1
+ParameterName93=Forward Voltage
+ParameterUpdate93=1
+ParameterName94=Frequency
+ParameterUpdate94=1
+ParameterName95=Frequency Stability
+ParameterUpdate95=1
+ParameterName96=Frequency Tolerance
+ParameterUpdate96=1
+ParameterName97=Geometry.Height
+ParameterUpdate97=1
+ParameterName98=Halogen Free
+ParameterUpdate98=1
+ParameterName99=Height
+ParameterUpdate99=1
+ParameterName100=Height - Seated (Max)
+ParameterUpdate100=1
+ParameterName101=Illumination Type
+ParameterUpdate101=1
+ParameterName102=Input Capacitance
+ParameterUpdate102=1
+ParameterName103=Insulation Resistance
+ParameterUpdate103=1
+ParameterName104=Interface
+ParameterUpdate104=1
+ParameterName105=JESD-30 Code
+ParameterUpdate105=1
+ParameterName106=LatestRevisionDate
+ParameterUpdate106=1
+ParameterName107=LatestRevisionNote
+ParameterUpdate107=1
+ParameterName108=Lead Free
+ParameterUpdate108=1
+ParameterName109=Lead Spacing
+ParameterUpdate109=1
+ParameterName110=Length
+ParameterUpdate110=1
+ParameterName111=Lens Size
+ParameterUpdate111=1
+ParameterName112=Lens Style
+ParameterUpdate112=1
+ParameterName113=Lens Transparency
+ParameterUpdate113=1
+ParameterName114=Library Reference
+ParameterUpdate114=1
+ParameterName115=Lifetime @ Temp.
+ParameterUpdate115=1
+ParameterName116=Load Capacitance
+ParameterUpdate116=1
+ParameterName117=Manufacturer
+ParameterUpdate117=1
+ParameterName118=Manufacturer Link
+ParameterUpdate118=1
+ParameterName119=Manufacturer Part Number
+ParameterUpdate119=1
+ParameterName120=Manufacturer Product Number
+ParameterUpdate120=1
+ParameterName121=Manufacturer Size Code
+ParameterUpdate121=1
+ParameterName122=Manufacturer URL
+ParameterUpdate122=1
+ParameterName123=Manufacturer_Name
+ParameterUpdate123=1
+ParameterName124=Manufacturer_Part_Number
+ParameterUpdate124=1
+ParameterName125=Material
+ParameterUpdate125=1
+ParameterName126=Max Charge Current
+ParameterUpdate126=1
+ParameterName127=Max Current Rating
+ParameterUpdate127=1
+ParameterName128=Max Forward Surge Current (Ifsm)
+ParameterUpdate128=1
+ParameterName129=Max Input Voltage
+ParameterUpdate129=1
+ParameterName130=Max Operating Temperature
+ParameterUpdate130=1
+ParameterName131=Max Output Current
+ParameterUpdate131=1
+ParameterName132=Max Power Dissipation
+ParameterUpdate132=1
+ParameterName133=Max Repetitive Reverse Voltage (Vrrm)
+ParameterUpdate133=1
+ParameterName134=Max Reverse Current
+ParameterUpdate134=1
+ParameterName135=Max Reverse Voltage (DC)
+ParameterUpdate135=1
+ParameterName136=Max Supply Voltage
+ParameterUpdate136=1
+ParameterName137=Max Voltage Rating (AC)
+ParameterUpdate137=1
+ParameterName138=Max Voltage Rating (DC)
+ParameterUpdate138=1
+ParameterName139=Mechanical Life
+ParameterUpdate139=1
+ParameterName140=Memory Size
+ParameterUpdate140=1
+ParameterName141=MF
+ParameterUpdate141=1
+ParameterName142=Military Standard
+ParameterUpdate142=1
+ParameterName143=Min Current Limit
+ParameterUpdate143=1
+ParameterName144=Min Input Voltage
+ParameterUpdate144=1
+ParameterName145=Min Operating Temperature
+ParameterUpdate145=1
+ParameterName146=Moisture Sensitivity Level
+ParameterUpdate146=1
+ParameterName147=Mount
+ParameterUpdate147=1
+ParameterName148=Mounting Type
+ParameterUpdate148=1
+ParameterName149=Mouser Part Number
+ParameterUpdate149=1
+ParameterName150=Mouser Price/Stock
+ParameterUpdate150=1
+ParameterName151=MP
+ParameterUpdate151=1
+ParameterName152=Nominal Output Voltage
+ParameterUpdate152=1
+ParameterName153=Number of Cells
+ParameterUpdate153=1
+ParameterName154=Number of Elements
+ParameterUpdate154=1
+ParameterName155=Number of Outputs
+ParameterUpdate155=1
+ParameterName156=Number of Phases
+ParameterUpdate156=1
+ParameterName157=Number of Pins
+ParameterUpdate157=1
+ParameterName158=Number of Poles
+ParameterUpdate158=1
+ParameterName159=Number of Regulators
+ParameterUpdate159=1
+ParameterName160=Number of Terminals/Pins
+ParameterUpdate160=1
+ParameterName161=Number of Terminations
+ParameterUpdate161=1
+ParameterName162=Online Catalog
+ParameterUpdate162=1
+ParameterName163=Operating Force
+ParameterUpdate163=1
+ParameterName164=Operating Mode
+ParameterUpdate164=1
+ParameterName165=Operating Temperature
+ParameterUpdate165=1
+ParameterName166=Optical Pattern
+ParameterUpdate166=1
+ParameterName167=Orientation
+ParameterUpdate167=1
+ParameterName168=Other Names
+ParameterUpdate168=1
+ParameterName169=Output Current
+ParameterUpdate169=1
+ParameterName170=Output Type
+ParameterUpdate170=1
+ParameterName171=Output Voltage
+ParameterUpdate171=1
+ParameterName172=Output Voltage Accuracy
+ParameterUpdate172=1
+ParameterName173=Package
+ParameterUpdate173=1
+ParameterName174=Package / Case
+ParameterUpdate174=1
+ParameterName175=Package Body Material
+ParameterUpdate175=1
+ParameterName176=Package Description
+ParameterUpdate176=1
+ParameterName177=Package Quantity
+ParameterUpdate177=1
+ParameterName178=Package Reference
+ParameterUpdate178=1
+ParameterName179=Package Shape
+ParameterUpdate179=1
+ParameterName180=PackageDescription
+ParameterUpdate180=1
+ParameterName181=PackageReference
+ParameterUpdate181=1
+ParameterName182=Packaging
+ParameterUpdate182=1
+ParameterName183=Part Status
+ParameterUpdate183=1
+ParameterName184=Peak Non-Repetitive Surge Current
+ParameterUpdate184=1
+ParameterName185=Peak Reflow Temperature (Cel)
+ParameterUpdate185=1
+ParameterName186=Polarity
+ParameterUpdate186=1
+ParameterName187=Power Rating
+ParameterUpdate187=1
+ParameterName188=Price
+ParameterUpdate188=1
+ParameterName189=Pricing 1
+ParameterUpdate189=1
+ParameterName190=Product Training Modules
+ParameterUpdate190=1
+ParameterName191=Published
+ParameterUpdate191=1
+ParameterName192=Publisher
+ParameterUpdate192=1
+ParameterName193=Purchase-URL
+ParameterUpdate193=1
+ParameterName194=Radiation Hardening
+ParameterUpdate194=1
+ParameterName195=Ratings
+ParameterUpdate195=1
+ParameterName196=Rds On Max
+ParameterUpdate196=1
+ParameterName197=REACH SVHC
+ParameterUpdate197=1
+ParameterName198=Reference Voltage
+ParameterUpdate198=1
+ParameterName199=Resistance
+ParameterUpdate199=1
+ParameterName200=Resistance Tolerance
+ParameterUpdate200=1
+ParameterName201=Resistor Type
+ParameterUpdate201=1
+ParameterName202=RoHS
+ParameterUpdate202=1
+ParameterName203=RoHS Compliant
+ParameterUpdate203=1
+ParameterName204=Sensitivity
+ParameterUpdate204=1
+ParameterName205=Series
+ParameterUpdate205=1
+ParameterName206=Size
+ParameterUpdate206=1
+ParameterName207=Size / Dimension
+ParameterUpdate207=1
+ParameterName208=Size Code
+ParameterUpdate208=1
+ParameterName209=SnapEDA_Link
+ParameterUpdate209=1
+ParameterName210=Standard Package
+ParameterUpdate210=1
+ParameterName211=Stock 1
+ParameterUpdate211=1
+ParameterName212=Supplier 1
+ParameterUpdate212=1
+ParameterName213=Supplier 2
+ParameterUpdate213=1
+ParameterName214=Supplier Part Number 1
+ParameterUpdate214=1
+ParameterName215=Supplier Part Number 2
+ParameterUpdate215=1
+ParameterName216=Surface Mount
+ParameterUpdate216=1
+ParameterName217=Switch Function
+ParameterUpdate217=1
+ParameterName218=Switch Travel
+ParameterUpdate218=1
+ParameterName219=Technology
+ParameterUpdate219=1
+ParameterName220=Temperature Coefficient
+ParameterUpdate220=1
+ParameterName221=Temperature Range
+ParameterUpdate221=1
+ParameterName222=Terminal Finish
+ParameterUpdate222=1
+ParameterName223=Terminal Form
+ParameterUpdate223=1
+ParameterName224=Terminal Position
+ParameterUpdate224=1
+ParameterName225=Termination
+ParameterUpdate225=1
+ParameterName226=Thickness
+ParameterUpdate226=1
+ParameterName227=Throw Configuration
+ParameterUpdate227=1
+ParameterName228=Time @ Peak Reflow Temperature-Max (s)
+ParameterUpdate228=1
+ParameterName229=Tolerance
+ParameterUpdate229=1
+ParameterName230=Type
+ParameterUpdate230=1
+ParameterName231=Value
+ParameterUpdate231=1
+ParameterName232=Viewing Angle
+ParameterUpdate232=1
+ParameterName233=Voltage
+ParameterUpdate233=1
+ParameterName234=Voltage - Rated
+ParameterUpdate234=1
+ParameterName235=Voltage Rating
+ParameterUpdate235=1
+ParameterName236=Voltage Rating (DC)
+ParameterUpdate236=1
+ParameterName237=Weight
+ParameterUpdate237=1
+ParameterName238=Width
+ParameterUpdate238=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=RES_0R_0603
+ModelName0=12Z-2010
 ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=14-1210
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=1725656
+ModelUpdate2=1
+ModelType3=PCBLIB
+ModelName3=1725672
+ModelUpdate3=1
+ModelType4=PCBLIB
+ModelName4=687310124422
+ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=AUDIO_AMP_MAX9744
+ModelUpdate5=1
+ModelType6=PCBLIB
+ModelName6=CAP ALUM 330UF 20% 50V SMD
+ModelUpdate6=1
+ModelType7=PCBLIB
+ModelName7=CAP_0.01UF_0603
+ModelUpdate7=1
+ModelType8=PCBLIB
+ModelName8=CAP_0.047uF_0603
+ModelUpdate8=1
+ModelType9=PCBLIB
+ModelName9=CAP_0.1uF_0603
+ModelUpdate9=1
+ModelType10=PCBLIB
+ModelName10=CAP_0.47uF_0603
+ModelUpdate10=1
+ModelType11=PCBLIB
+ModelName11=CAP_100pF_0603
+ModelUpdate11=1
+ModelType12=PCBLIB
+ModelName12=CAP_10nF_0603
+ModelUpdate12=1
+ModelType13=PCBLIB
+ModelName13=CAP_10uF_0603
+ModelUpdate13=1
+ModelType14=PCBLIB
+ModelName14=CAP_15pF_0603
+ModelUpdate14=1
+ModelType15=PCBLIB
+ModelName15=CAP_1nF_0603
+ModelUpdate15=1
+ModelType16=PCBLIB
+ModelName16=CAP_1UF_0603
+ModelUpdate16=1
+ModelType17=PCBLIB
+ModelName17=CAP_1uF_1210
+ModelUpdate17=1
+ModelType18=PCBLIB
+ModelName18=CAP_22pF_0603
+ModelUpdate18=1
+ModelType19=PCBLIB
+ModelName19=CAP_3.3nF_0603
+ModelUpdate19=1
+ModelType20=PCBLIB
+ModelName20=CAP_470pF_0603
+ModelUpdate20=1
+ModelType21=PCBLIB
+ModelName21=CAP-0603
+ModelUpdate21=1
+ModelType22=PCBLIB
+ModelName22=CAP-1206
+ModelUpdate22=1
+ModelType23=PCBLIB
+ModelName23=CONN_10x_3220-10-0300-00
+ModelUpdate23=1
+ModelType24=PCBLIB
+ModelName24=CONN_3.5MM_COMBO
+ModelUpdate24=1
+ModelType25=PCBLIB
+ModelName25=CONN_3.5MM_STEREO_DBL_VERT_TH
+ModelUpdate25=1
+ModelType26=PCBLIB
+ModelName26=CONN_DC_JACK_2.1mmID_5.5mmOD_RA_TH
+ModelUpdate26=1
+ModelType27=PCBLIB
+ModelName27=CONN_JACK_STEREO_3.5MM_SPDT_RA
+ModelUpdate27=1
+ModelType28=PCBLIB
+ModelName28=CONN_SD_CARD_SMD
+ModelUpdate28=1
+ModelType29=PCBLIB
+ModelName29=CONN_TP_SMD
+ModelUpdate29=1
+ModelType30=PCBLIB
+ModelName30=ENC_ROTARY_20PPR_TH
+ModelUpdate30=1
+ModelType31=PCBLIB
+ModelName31=FER_8A_4mOHM_0603
+ModelUpdate31=1
+ModelType32=PCBLIB
+ModelName32=HDRV5W67P0X254_1X5_1270X241X858P
+ModelUpdate32=1
+ModelType33=PCBLIB
+ModelName33=HS-AUDIO_AMP_MAX9744
+ModelUpdate33=1
+ModelType34=PCBLIB
+ModelName34=IC_BUF_ESD_CD74HC4050MT
+ModelUpdate34=1
+ModelType35=PCBLIB
+ModelName35=IC_DEBOUNCE_8IN8OUT_SMD
+ModelUpdate35=1
+ModelType36=PCBLIB
+ModelName36=IC_MDBT50Q-1M_SMD
+ModelUpdate36=1
+ModelType37=PCBLIB
+ModelName37=IC_REG_LINEAR_3V3_1V8_SMD
+ModelUpdate37=1
+ModelType38=PCBLIB
+ModelName38=IC_SSR_NO_SMD
+ModelUpdate38=1
+ModelType39=PCBLIB
+ModelName39=IC_VS1053B_LQFP48
+ModelUpdate39=1
+ModelType40=PCBLIB
+ModelName40=J1-0603
+ModelUpdate40=1
+ModelType41=PCBLIB
+ModelName41=KEMT-A-3216-18-2_L
+ModelUpdate41=1
+ModelType42=PCBLIB
+ModelName42=KEMT-A-3216-18-2_M
+ModelUpdate42=1
+ModelType43=PCBLIB
+ModelName43=KEMT-A-3216-18-2_N
+ModelUpdate43=1
+ModelType44=PCBLIB
+ModelName44=LCD_Screen_16x2
+ModelUpdate44=1
+ModelType45=PCBLIB
+ModelName45=LED_0603_SMD
+ModelUpdate45=1
+ModelType46=PCBLIB
+ModelName46=LED_Dome_4LED
+ModelUpdate46=1
+ModelType47=PCBLIB
+ModelName47=LIPO-CHARGING_8.4V_10DFN
+ModelUpdate47=1
+ModelType48=PCBLIB
+ModelName48=MAX9744_T4477
+ModelUpdate48=1
+ModelType49=PCBLIB
+ModelName49=MIC_ELECTRET_CASTLE PAD
+ModelUpdate49=1
+ModelType50=PCBLIB
+ModelName50=MOSFET_P-CH_20V_SOT23
+ModelUpdate50=1
+ModelType51=PCBLIB
+ModelName51=onSemi_SOT-23_N
+ModelUpdate51=1
+ModelType52=PCBLIB
+ModelName52=POT_1K_LOG_TH_RA
+ModelUpdate52=1
+ModelType53=PCBLIB
+ModelName53=REG_3.3V_D2PAK
+ModelUpdate53=1
+ModelType54=PCBLIB
+ModelName54=Res_0603_M
+ModelUpdate54=1
+ModelType55=PCBLIB
+ModelName55=Res_0603_N
+ModelUpdate55=1
+ModelType56=PCBLIB
+ModelName56=RES_10R_0603
+ModelUpdate56=1
+ModelType57=PCBLIB
+ModelName57=RES_3.6M_0603
+ModelUpdate57=1
+ModelType58=PCBLIB
+ModelName58=RES_470R_0603
+ModelUpdate58=1
+ModelType59=PCBLIB
+ModelName59=RES-0805
+ModelUpdate59=1
+ModelType60=PCBLIB
+ModelName60=RESC6332
+ModelUpdate60=1
+ModelType61=PCBLIB
+ModelName61=SCHOTTKY_20V_3A_SMB
+ModelUpdate61=1
+ModelType62=PCBLIB
+ModelName62=SOT-SC70
+ModelUpdate62=1
+ModelType63=PCBLIB
+ModelName63=SW_SLIDE_RA_TH_DPDT
+ModelUpdate63=1
+ModelType64=PCBLIB
+ModelName64=SW_SLIDE_SPDT_VERT_TH
+ModelUpdate64=1
+ModelType65=PCBLIB
+ModelName65=SW_TACTILE_SPST-NO
+ModelUpdate65=1
+ModelType66=PCBLIB
+ModelName66=TAG_CONNECT_TC2030
+ModelUpdate66=1
+ModelType67=PCBLIB
+ModelName67=TEST POINT ROUND SMD 0.6mm
+ModelUpdate67=1
+ModelType68=PCBLIB
+ModelName68=XTAL_12.288MHz_SMD
+ModelUpdate68=1
+ModelType69=PCBLIB
+ModelName69=XTAL-32.768kHz
+ModelUpdate69=1
+ModelTypeGroup1=SI
+ModelTypeUpdate1=1
+ModelType70=SI
+ModelName70=Res
+ModelUpdate70=1
+ModelTypeGroup2=SIM
+ModelTypeUpdate2=1
+ModelType71=SIM
+ModelName71=RESISTOR
+ModelUpdate71=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
