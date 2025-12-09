@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [SAMP V3.3] of Project [TSI_SAMP_SAMI_V3.4.PrjPcb]
+   Generated File[Bill of Materials-TSI_SAMP_SAMI_V3.4(SAMP V3.3).xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 9:57:53 AM On 2025-09-17

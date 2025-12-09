@@ -1,0 +1,665 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2025-11-25</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:41:13 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc" class="file"><acronym title="E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc">E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">103</td></tr>
+</table>
+</td>
+</table><a name="ID22UBY054R3TPKHRD0WNBFUDMXET3MWWTTSZSWWIYFLPQLCJE1PBE"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSKEB34RFOGOFOQOM3OI1K5HR3NNLUQSNAVIJPZP1RLGHSWY2U3QL">Clearance Constraint (Gap=4mil) (All),(All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDM522ODOOJQPUWJ2E0NMW10NUIAPSOPA5CQQWTLAQU4YZEWHVEEG">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0H2YPZKROYTKIDIORSSGKAA2KIPFTPAX05KYWFGMJC0D5NS0DXO">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGLSIWVICHG0OCJWAY3N0A14DDFJSTGTZKXWKKLOTAYHLWJAVOJOH">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGWFSOX0CEABXKHFRKRBWDEUABG2EZV2FQN5U24LSDMXLXYLLDSKH">Width Constraint (Min=4mil) (Max=75mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAUKXD0N1PY4FEICESHKQGKVQPMQELTVMURQ1HHPBSICAFZPYW0ZL">Power Plane Connect Rule(Relief Connect )(Expansion=10mil) (Conductor Width=7mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAW4CIW1IKB4KMF2L0SWSNVGUPLUW05NP4DABOZNKG33EFVJHR10I">Minimum Annular Ring (Minimum=4.921mil) (All)</a></td>
+<td class="column2">39</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3R2FKL0WALFZHMMF4BIRVHL32OXJUAF0UMO3S4FIHDS0QJV2X3OG">Hole Size Constraint (Min=5.906mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5TBS1TVQU3W0PW3OPVUX1UF2CDDT4FXXPSDUZ3JKOYADSIPNOYUM">Hole To Hole Clearance (Gap=9.842mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2KACMVV350R4L5B40WJLDY023PMX1WPRQ10IZCPSP3DHB4FP0XLJ">Minimum Solder Mask Sliver (Gap=1mil) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4LZFJY10N2OCI4J3GTZD3E2MWHR0RZCNC2221XG2GM52B1SBLHLP">Silk To Solder Mask (Clearance=1mil) (IsPad),(All)</a></td>
+<td class="column2">27</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTXSKGHHHPX51B2UUTZURHF3USBYYF1UZPF2EOKBCMRD2AMQ0WNME">Silk to Silk (Clearance=5mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0DMASBNLEDCPLFVRDFBHSWDOJH3UMG3C12VA2DH0LPZRHV3OCDTK">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKUMWJZ3CJC5XDUYGQK0101SXFG0BW0NFDTUPXBHZD5LWZ5NIUGH">Height Constraint (Min=0mil) (Max=1181.102mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">103</td>
+</tr>
+</table><br><a name="IDSKEB34RFOGOFOQOM3OI1K5HR3NNLUQSNAVIJPZP1RLGHSWY2U3QL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=4mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True">Clearance Constraint: (Collision &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad MK1-1(2869.606mil,819.858mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7610.47mil|Location2.X=7614.136mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7610.47mil|Location2.X=7614.136mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True">Clearance Constraint: (Collision &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad MK1-2(2759.37mil,819.858mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7609.393mil|Location2.X=7614.643mil|Location1.Y=5659.753mil|Location2.Y=5665.003mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7609.393mil|Location2.X=7614.643mil|Location1.Y=5659.753mil|Location2.Y=5665.003mil|Absolute=True">Clearance Constraint: (0.571mil &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5601.489mil|Location2.Y=5605.156mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5601.489mil|Location2.Y=5605.156mil|Absolute=True">Clearance Constraint: (Collision &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7609.393mil|Location2.X=7614.643mil|Location1.Y=5659.753mil|Location2.Y=5665.003mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7609.393mil|Location2.X=7614.643mil|Location1.Y=5659.753mil|Location2.Y=5665.003mil|Absolute=True">Clearance Constraint: (0.571mil &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5601.489mil|Location2.Y=5605.156mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5601.489mil|Location2.Y=5605.156mil|Absolute=True">Clearance Constraint: (Collision &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7610.47mil|Location2.X=7614.136mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7610.47mil|Location2.X=7614.136mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True">Clearance Constraint: (Collision &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (2697.488mil,881.74mil)(2759.37mil,819.858mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7720.135mil|Location2.X=7723.802mil|Location1.Y=5631.017mil|Location2.Y=5634.684mil|Absolute=True">Clearance Constraint: (Collision &lt; 4mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (2869.606mil,819.858mil)(2869.606mil,827.476mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7900.618mil|Location2.X=7907.611mil|Location1.Y=6000.618mil|Location2.Y=6007.695mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7900.618mil|Location2.X=7907.611mil|Location1.Y=6000.618mil|Location2.Y=6007.695mil|Absolute=True">Clearance Constraint: (0.541mil &lt; 4mil) Between Split Plane  (3V3_LDO) on POWER And Split Plane  (AVDD) on POWER </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDM522ODOOJQPUWJ2E0NMW10NUIAPSOPA5CQQWTLAQU4YZEWHVEEG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6116.577mil|Location2.X=6268.069mil|Location1.Y=6372.679mil|Location2.Y=6524.171mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6116.577mil|Location2.X=6268.069mil|Location1.Y=6372.679mil|Location2.Y=6524.171mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad DS1-0(1339.488mil,1635.858mil) on Multi-Layer Location : [X = 6192.323mil][Y = 6448.425mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6116.577mil|Location2.X=6268.069mil|Location1.Y=7572.679mil|Location2.Y=7724.171mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6116.577mil|Location2.X=6268.069mil|Location1.Y=7572.679mil|Location2.Y=7724.171mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad DS1-0(1339.488mil,2835.858mil) on Multi-Layer Location : [X = 6192.323mil][Y = 7648.425mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9066.577mil|Location2.X=9218.069mil|Location1.Y=6372.679mil|Location2.Y=6524.171mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9066.577mil|Location2.X=9218.069mil|Location1.Y=6372.679mil|Location2.Y=6524.171mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad DS1-0(4289.488mil,1635.858mil) on Multi-Layer Location : [X = 9142.323mil][Y = 6448.425mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9066.577mil|Location2.X=9218.069mil|Location1.Y=7572.679mil|Location2.Y=7724.171mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9066.577mil|Location2.X=9218.069mil|Location1.Y=7572.679mil|Location2.Y=7724.171mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad DS1-0(4289.488mil,2835.858mil) on Multi-Layer Location : [X = 9142.323mil][Y = 7648.425mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7671.863mil|Location2.X=7742.426mil|Location1.Y=5597.569mil|Location2.Y=5668.132mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7671.863mil|Location2.X=7742.426mil|Location1.Y=5597.569mil|Location2.Y=5668.132mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad MK1-1(2869.606mil,819.858mil) on Multi-Layer Location : [X = 7707.145mil][Y = 5632.85mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7592.069mil|Location2.X=7662.087mil|Location1.Y=5597.842mil|Location2.Y=5667.859mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7592.069mil|Location2.X=7662.087mil|Location1.Y=5597.842mil|Location2.Y=5667.859mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad MK1-2(2759.37mil,819.858mil) on Multi-Layer Location : [X = 7627.078mil][Y = 5632.85mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7691.176mil|Location2.X=7753.233mil|Location1.Y=5601.822mil|Location2.Y=5663.879mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7691.176mil|Location2.X=7753.233mil|Location1.Y=5601.822mil|Location2.Y=5663.879mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Region (0 hole(s)) Bottom Layer Location : [X = 7722.205mil][Y = 5632.85mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7691.176mil|Location2.X=7753.233mil|Location1.Y=5601.822mil|Location2.Y=5663.879mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7691.176mil|Location2.X=7753.233mil|Location1.Y=5601.822mil|Location2.Y=5663.879mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Region (0 hole(s)) Top Layer Location : [X = 7722.205mil][Y = 5632.85mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7606.008mil|Location2.X=7624.145mil|Location1.Y=5624.82mil|Location2.Y=5642.957mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7606.008mil|Location2.X=7624.145mil|Location1.Y=5624.82mil|Location2.Y=5642.957mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (2697.488mil,881.74mil)(2759.37mil,819.858mil) on Bottom Layer Location : [X = 7615.076mil][Y = 5633.889mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7707.187mil|Location2.X=7731.105mil|Location1.Y=5624.7mil|Location2.Y=5648.618mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7707.187mil|Location2.X=7731.105mil|Location1.Y=5624.7mil|Location2.Y=5648.618mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (2869.606mil,819.858mil)(2869.606mil,827.476mil) on Bottom Layer Location : [X = 7719.146mil][Y = 5636.659mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID0H2YPZKROYTKIDIORSSGKAA2KIPFTPAX05KYWFGMJC0D5NS0DXO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10367.43mil|Location2.X=10567.43mil|Location1.Y=7109.745mil|Location2.Y=7325.493mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10367.43mil|Location2.X=10567.43mil|Location1.Y=7109.745mil|Location2.Y=7325.493mil|Absolute=True">Un-Routed Net Constraint: Net NetC48_2 Between Track (5615.067mil,2396.753mil)(5615.068mil,2396.753mil) on Bottom Layer And Pad R38-2(5615.067mil,2412.501mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9798.295mil|Location2.X=9998.295mil|Location1.Y=7203.492mil|Location2.Y=7419.24mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9798.295mil|Location2.X=9998.295mil|Location1.Y=7203.492mil|Location2.Y=7419.24mil|Absolute=True">Un-Routed Net Constraint: Net R_LED_DOME Between Pad R73-1(5045.933mil,2490.5mil) on Bottom Layer And Track (5015.681mil,2536.5mil)(5045.933mil,2506.248mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10465.008mil|Location2.X=10665.008mil|Location1.Y=6982.547mil|Location2.Y=7212.075mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10465.008mil|Location2.X=10665.008mil|Location1.Y=6982.547mil|Location2.Y=7212.075mil|Absolute=True">Un-Routed Net Constraint: Net NetC49_1 Between Pad U11-18(5712.646mil,2269.555mil) on Bottom Layer And Track (5712.646mil,2299.083mil)(5712.646mil,2337.561mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9775.984mil|Location2.X=9986.988mil|Location1.Y=4443.307mil|Location2.Y=4714.209mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9775.984mil|Location2.X=9986.988mil|Location1.Y=4443.307mil|Location2.Y=4714.209mil|Absolute=True">Un-Routed Net Constraint: Net VBAT Between Pad U1-4(5023.622mil,-269.685mil) on Bottom Layer And Track (5034.626mil,-198.783mil)(5034.626mil,97.441mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7370.85mil|Location2.X=7663.595mil|Location1.Y=7846.35mil|Location2.Y=8043.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7370.85mil|Location2.X=7663.595mil|Location1.Y=7846.35mil|Location2.Y=8043.449mil|Absolute=True">Un-Routed Net Constraint: Net 3V3_LDO Between Track (2618.488mil,3133.358mil)(2618.488mil,3244.618mil) on Top Layer And Via (2711.232mil,3130.457mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9214.463mil|Location2.X=9414.463mil|Location1.Y=7864.659mil|Location2.Y=8067.696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9214.463mil|Location2.X=9414.463mil|Location1.Y=7864.659mil|Location2.Y=8067.696mil|Absolute=True">Un-Routed Net Constraint: Net VS_SPI_DREQ Between Track (4462.1mil,3151.667mil)(5037.768mil,2576mil) on Bottom Layer And Track (4310.851mil,3305.953mil)(4462.1mil,3154.704mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10299.653mil|Location2.X=10585.362mil|Location1.Y=6797.507mil|Location2.Y=7105.492mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10299.653mil|Location2.X=10585.362mil|Location1.Y=6797.507mil|Location2.Y=7105.492mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Track (5458.246mil,2084.515mil)(5547.291mil,2084.515mil) on Bottom Layer And Via (5633mil,2192.5mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10386.173mil|Location2.X=10684.693mil|Location1.Y=6959.02mil|Location2.Y=7182.547mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10386.173mil|Location2.X=10684.693mil|Location1.Y=6959.02mil|Location2.Y=7182.547mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Track (5633.811mil,2193.311mil)(5633.811mil,2246.028mil) on Bottom Layer And Track (5732.331mil,2269.555mil)(5732.331mil,2345.451mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10596.35mil|Location2.X=11037.624mil|Location1.Y=7147.35mil|Location2.Y=7201.588mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10596.35mil|Location2.X=11037.624mil|Location1.Y=7147.35mil|Location2.Y=7201.588mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Via (5843.988mil,2434.358mil) from Top Layer to Bottom Layer And Track (6085.261mil,2288.596mil)(6087.524mil,2290.859mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10610.071mil|Location2.X=10710.13mil|Location1.Y=7232.071mil|Location2.Y=7261.13mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10610.071mil|Location2.X=10710.13mil|Location1.Y=7232.071mil|Location2.Y=7261.13mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Via (5771.488mil,2432.858mil) from Top Layer to Bottom Layer And Via (5843.988mil,2434.358mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10807.071mil|Location2.X=10944.13mil|Location1.Y=6475.571mil|Location2.Y=6905.193mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10807.071mil|Location2.X=10944.13mil|Location1.Y=6475.571mil|Location2.Y=6905.193mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Via (5968.488mil,2078.421mil) from Top Layer to Bottom Layer And Via (6077.988mil,1676.358mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10807.071mil|Location2.X=10956.63mil|Location1.Y=6877.634mil|Location2.Y=7057.45mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10807.071mil|Location2.X=10956.63mil|Location1.Y=6877.634mil|Location2.Y=7057.45mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Via (5968.488mil,2078.421mil) from Top Layer to Bottom Layer And Via (6090.489mil,2230.678mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDAW4CIW1IKB4KMF2L0SWSNVGUPLUW05NP4DABOZNKG33EFVJHR10I"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=4.921mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9418.851mil|Location2.X=9425.023mil|Location1.Y=3999.233mil|Location2.Y=4005.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9418.851mil|Location2.X=9425.023mil|Location1.Y=3999.233mil|Location2.Y=4005.405mil|Absolute=True">Minimum Annular Ring: (4.92mil &lt; 4.921mil) Pad J1-0(4616.327mil,-810.673mil) on Multi-Layer (Annular Ring=4.921mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10813.564mil|Location2.X=10819.735mil|Location1.Y=7308.521mil|Location2.Y=7314.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10813.564mil|Location2.X=10819.735mil|Location1.Y=7308.521mil|Location2.Y=7314.692mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J12-0(5964.287mil,2474.008mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10813.564mil|Location2.X=10819.735mil|Location1.Y=7702.221mil|Location2.Y=7708.393mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10813.564mil|Location2.X=10819.735mil|Location1.Y=7702.221mil|Location2.Y=7708.393mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J12-0(5964.287mil,2867.709mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11207.264mil|Location2.X=11213.435mil|Location1.Y=7308.521mil|Location2.Y=7314.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11207.264mil|Location2.X=11213.435mil|Location1.Y=7308.521mil|Location2.Y=7314.692mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J12-0(6357.988mil,2474.008mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11207.264mil|Location2.X=11213.435mil|Location1.Y=7702.221mil|Location2.Y=7708.393mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11207.264mil|Location2.X=11213.435mil|Location1.Y=7702.221mil|Location2.Y=7708.393mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J12-0(6357.988mil,2867.709mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11305.69mil|Location2.X=11311.861mil|Location1.Y=7308.521mil|Location2.Y=7314.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11305.69mil|Location2.X=11311.861mil|Location1.Y=7308.521mil|Location2.Y=7314.692mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J12-0(6456.413mil,2474.008mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11305.69mil|Location2.X=11311.861mil|Location1.Y=7702.221mil|Location2.Y=7708.393mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11305.69mil|Location2.X=11311.861mil|Location1.Y=7702.221mil|Location2.Y=7708.393mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J12-0(6456.413mil,2867.709mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6581.914mil|Location2.X=6588.086mil|Location1.Y=8299.17mil|Location2.Y=8305.342mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6581.914mil|Location2.X=6588.086mil|Location1.Y=8299.17mil|Location2.Y=8305.342mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J2-0(1732.638mil,3464.658mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6581.914mil|Location2.X=6588.086mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6581.914mil|Location2.X=6588.086mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J2-0(1732.638mil,3858.358mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6581.914mil|Location2.X=6588.086mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6581.914mil|Location2.X=6588.086mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J2-0(1732.638mil,3956.784mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6975.615mil|Location2.X=6981.786mil|Location1.Y=8299.17mil|Location2.Y=8305.342mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6975.615mil|Location2.X=6981.786mil|Location1.Y=8299.17mil|Location2.Y=8305.342mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J2-0(2126.339mil,3464.658mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6975.615mil|Location2.X=6981.786mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6975.615mil|Location2.X=6981.786mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J2-0(2126.339mil,3858.358mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6975.615mil|Location2.X=6981.786mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6975.615mil|Location2.X=6981.786mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J2-0(2126.339mil,3956.784mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7171.914mil|Location2.X=7178.086mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7171.914mil|Location2.X=7178.086mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J3-0(2322.638mil,3464.646mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7565.615mil|Location2.X=7571.786mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7565.615mil|Location2.X=7571.786mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J3-0(2716.339mil,3464.646mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7369.71mil|Location2.X=7373.991mil|Location1.Y=8669.198mil|Location2.Y=8673.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7369.71mil|Location2.X=7373.991mil|Location1.Y=8669.198mil|Location2.Y=8673.479mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad J3-1(2519.488mil,3858.347mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7565.615mil|Location2.X=7571.786mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7565.615mil|Location2.X=7571.786mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J3-1A(2716.339mil,3907.559mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7171.914mil|Location2.X=7178.086mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7171.914mil|Location2.X=7178.086mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J3-1B(2322.638mil,3907.559mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7172.86mil|Location2.X=7177.14mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7172.86mil|Location2.X=7177.14mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad J3-2B_3(2322.638mil,3681.181mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7566.56mil|Location2.X=7570.841mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7566.56mil|Location2.X=7570.841mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad J3-5B_2(2716.339mil,3681.181mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7761.914mil|Location2.X=7768.086mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7761.914mil|Location2.X=7768.086mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J4-0(2912.638mil,3464.646mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8155.615mil|Location2.X=8161.786mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8155.615mil|Location2.X=8161.786mil|Location1.Y=8299.158mil|Location2.Y=8305.33mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J4-0(3306.339mil,3464.646mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7959.71mil|Location2.X=7963.991mil|Location1.Y=8669.198mil|Location2.Y=8673.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7959.71mil|Location2.X=7963.991mil|Location1.Y=8669.198mil|Location2.Y=8673.479mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad J4-1(3109.488mil,3858.347mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8155.615mil|Location2.X=8161.786mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8155.615mil|Location2.X=8161.786mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J4-1A(3306.339mil,3907.559mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7761.914mil|Location2.X=7768.086mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7761.914mil|Location2.X=7768.086mil|Location1.Y=8643.647mil|Location2.Y=8649.818mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J4-1B(2912.638mil,3907.559mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7762.86mil|Location2.X=7767.14mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7762.86mil|Location2.X=7767.14mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad J4-2B_3(2912.638mil,3681.181mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8156.56mil|Location2.X=8160.841mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8156.56mil|Location2.X=8160.841mil|Location1.Y=8492.033mil|Location2.Y=8496.314mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad J4-5B_2(3306.339mil,3681.181mil) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351.914mil|Location2.X=8358.086mil|Location1.Y=8299.17mil|Location2.Y=8305.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351.914mil|Location2.X=8358.086mil|Location1.Y=8299.17mil|Location2.Y=8305.341mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J5-0(3502.638mil,3464.657mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351.914mil|Location2.X=8358.086mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351.914mil|Location2.X=8358.086mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J5-0(3502.638mil,3858.358mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351.914mil|Location2.X=8358.086mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351.914mil|Location2.X=8358.086mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J5-0(3502.638mil,3956.783mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.615mil|Location2.X=8751.786mil|Location1.Y=8299.17mil|Location2.Y=8305.341mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.615mil|Location2.X=8751.786mil|Location1.Y=8299.17mil|Location2.Y=8305.341mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J5-0(3896.339mil,3464.657mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.615mil|Location2.X=8751.786mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.615mil|Location2.X=8751.786mil|Location1.Y=8692.871mil|Location2.Y=8699.042mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J5-0(3896.339mil,3858.358mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.615mil|Location2.X=8751.786mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8745.615mil|Location2.X=8751.786mil|Location1.Y=8791.296mil|Location2.Y=8797.467mil|Absolute=True">Minimum Annular Ring: (1.968mil &lt; 4.921mil) Pad J5-0(3896.339mil,3956.783mil) on Multi-Layer (Annular Ring=1.968mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7632.686mil|Location2.X=7638.857mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7632.686mil|Location2.X=7638.857mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True">Minimum Annular Ring: (3.936mil &lt; 4.921mil) Pad J6-0(2824.748mil,-815.846mil) on Multi-Layer (Annular Ring=3.937mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7790.166mil|Location2.X=7796.338mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7790.166mil|Location2.X=7796.338mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True">Minimum Annular Ring: (3.936mil &lt; 4.921mil) Pad J6-0(2982.228mil,-815.846mil) on Multi-Layer (Annular Ring=3.937mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8271.186mil|Location2.X=8277.357mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8271.186mil|Location2.X=8277.357mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True">Minimum Annular Ring: (3.936mil &lt; 4.921mil) Pad J7-0(3463.248mil,-815.846mil) on Multi-Layer (Annular Ring=3.937mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8428.666mil|Location2.X=8434.838mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8428.666mil|Location2.X=8434.838mil|Location1.Y=3954.69mil|Location2.Y=3960.861mil|Absolute=True">Minimum Annular Ring: (3.936mil &lt; 4.921mil) Pad J7-0(3620.728mil,-815.846mil) on Multi-Layer (Annular Ring=3.937mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7718.883mil|Location2.X=7725.054mil|Location1.Y=5659.542mil|Location2.Y=5665.713mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7718.883mil|Location2.X=7725.054mil|Location1.Y=5659.542mil|Location2.Y=5665.713mil|Absolute=True">Minimum Annular Ring: (0.5mil &lt; 4.921mil) Pad MK1-1(2869.606mil,819.858mil) on Multi-Layer (Annular Ring=0.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7608.647mil|Location2.X=7614.818mil|Location1.Y=5659.542mil|Location2.Y=5665.713mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7608.647mil|Location2.X=7614.818mil|Location1.Y=5659.542mil|Location2.Y=5665.713mil|Absolute=True">Minimum Annular Ring: (0.5mil &lt; 4.921mil) Pad MK1-2(2759.37mil,819.858mil) on Multi-Layer (Annular Ring=0.5mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2KACMVV350R4L5B40WJLDY023PMX1WPRQ10IZCPSP3DHB4FP0XLJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=1mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7591.016mil|Location2.X=7596.632mil|Location1.Y=8449.359mil|Location2.Y=8454.832mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7591.016mil|Location2.X=7596.632mil|Location1.Y=8449.359mil|Location2.Y=8454.832mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.272mil &lt; 1mil) Between Pad J3-2A(2765.551mil,3602.441mil) on Multi-Layer And Pad J3-5B_2(2716.339mil,3681.181mil) on Multi-Layer [Top Solder] Mask Sliver [0.272mil] / [Bottom Solder] Mask Sliver [0.272mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7150.435mil|Location2.X=7156.128mil|Location1.Y=8446.24mil|Location2.Y=8451.609mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7150.435mil|Location2.X=7156.128mil|Location1.Y=8446.24mil|Location2.Y=8451.609mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.272mil &lt; 1mil) Between Pad J3-2B_3(2322.638mil,3681.181mil) on Multi-Layer And Pad J3-5A(2273.425mil,3602.441mil) on Multi-Layer [Top Solder] Mask Sliver [0.272mil] / [Bottom Solder] Mask Sliver [0.272mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8181.016mil|Location2.X=8186.632mil|Location1.Y=8449.359mil|Location2.Y=8454.832mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8181.016mil|Location2.X=8186.632mil|Location1.Y=8449.359mil|Location2.Y=8454.832mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.272mil &lt; 1mil) Between Pad J4-2A(3355.551mil,3602.441mil) on Multi-Layer And Pad J4-5B_2(3306.339mil,3681.181mil) on Multi-Layer [Top Solder] Mask Sliver [0.272mil] / [Bottom Solder] Mask Sliver [0.272mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7740.435mil|Location2.X=7746.128mil|Location1.Y=8446.24mil|Location2.Y=8451.609mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7740.435mil|Location2.X=7746.128mil|Location1.Y=8446.24mil|Location2.Y=8451.609mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.272mil &lt; 1mil) Between Pad J4-2B_3(2912.638mil,3681.181mil) on Multi-Layer And Pad J4-5A(2863.425mil,3602.441mil) on Multi-Layer [Top Solder] Mask Sliver [0.272mil] / [Bottom Solder] Mask Sliver [0.272mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4LZFJY10N2OCI4J3GTZD3E2MWHR0RZCNC2221XG2GM52B1SBLHLP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=1mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9833.485mil|Location2.X=9835.151mil|Location1.Y=7008.6mil|Location2.Y=7010.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9833.485mil|Location2.X=9835.151mil|Location1.Y=7008.6mil|Location2.Y=7010.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Arc (5067.008mil,2416.85mil) on Top Overlay And Pad S2-4(4984.063mil,2172.866mil) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9910.647mil|Location2.X=9912.314mil|Location1.Y=6992.891mil|Location2.Y=6994.557mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9910.647mil|Location2.X=9912.314mil|Location1.Y=6992.891mil|Location2.Y=6994.557mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Arc (5067.008mil,2416.85mil) on Top Overlay And Pad S2-5(5082.488mil,2172.866mil) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10015.038mil|Location2.X=10016.705mil|Location1.Y=7013.367mil|Location2.Y=7015.033mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10015.038mil|Location2.X=10016.705mil|Location1.Y=7013.367mil|Location2.Y=7015.033mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Arc (5067.008mil,2416.85mil) on Top Overlay And Pad S2-6(5180.913mil,2172.866mil) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10957.694mil|Location2.X=10959.361mil|Location1.Y=5858.958mil|Location2.Y=5860.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10957.694mil|Location2.X=10959.361mil|Location1.Y=5858.958mil|Location2.Y=5860.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad C16-1(6126.606mil,1085.858mil) on Bottom Layer And Track (6057.937mil,991.681mil)(6106.165mil,1046.799mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11009.631mil|Location2.X=11011.298mil|Location1.Y=5858.958mil|Location2.Y=5860.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11009.631mil|Location2.X=11011.298mil|Location1.Y=5858.958mil|Location2.Y=5860.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad C16-1(6126.606mil,1085.858mil) on Bottom Layer And Track (6106.165mil,1046.799mil)(6214.433mil,1046.799mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10164.236mil|Location2.X=10165.902mil|Location1.Y=5933.19mil|Location2.Y=5934.856mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10164.236mil|Location2.X=10165.902mil|Location1.Y=5933.19mil|Location2.Y=5934.856mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad C17-1(5303.37mil,1107.358mil) on Bottom Layer And Text "C22" (5351.088mil,1032.574mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9713.592mil|Location2.X=9715.259mil|Location1.Y=5615.308mil|Location2.Y=5616.975mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9713.592mil|Location2.X=9715.259mil|Location1.Y=5615.308mil|Location2.Y=5616.975mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad C22-2(4955.709mil,842.52mil) on Bottom Layer And Track (4862.063mil,622.689mil)(4862.063mil,1060.681mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.227mil|Location2.X=9484.893mil|Location1.Y=4753.104mil|Location2.Y=4754.77mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.227mil|Location2.X=9484.893mil|Location1.Y=4753.104mil|Location2.Y=4754.77mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad C9-2(4636.988mil,-41.339mil) on Bottom Layer And Text "Q1" (4686.365mil,-73.156mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7566.688mil|Location2.X=7568.354mil|Location1.Y=8300.401mil|Location2.Y=8302.067mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7566.688mil|Location2.X=7568.354mil|Location1.Y=8300.401mil|Location2.Y=8302.067mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad J3-0(2716.339mil,3464.646mil) on Multi-Layer And Text "J3" (2767.611mil,3474.031mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7656.62mil|Location2.X=7658.87mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7656.62mil|Location2.X=7658.87mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.888mil &lt; 1mil) Between Pad J3-2A(2765.551mil,3602.441mil) on Multi-Layer And Track (2810.827mil,3409.528mil)(2810.827mil,4023.701mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.888mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7084.831mil|Location2.X=7087.081mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7084.831mil|Location2.X=7087.081mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.888mil &lt; 1mil) Between Pad J3-5A(2273.425mil,3602.441mil) on Multi-Layer And Track (2228.15mil,3409.528mil)(2228.15mil,4023.701mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.888mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8172.492mil|Location2.X=8174.159mil|Location1.Y=8297.815mil|Location2.Y=8299.482mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8172.492mil|Location2.X=8174.159mil|Location1.Y=8297.815mil|Location2.Y=8299.482mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad J4-0(3306.339mil,3464.646mil) on Multi-Layer And Text "J4" (3355.171mil,3472.115mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8246.62mil|Location2.X=8248.87mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8246.62mil|Location2.X=8248.87mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.888mil &lt; 1mil) Between Pad J4-2A(3355.551mil,3602.441mil) on Multi-Layer And Track (3400.827mil,3409.528mil)(3400.827mil,4023.701mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.888mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7674.831mil|Location2.X=7677.081mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7674.831mil|Location2.X=7677.081mil|Location1.Y=8414.308mil|Location2.Y=8416.558mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.888mil &lt; 1mil) Between Pad J4-5A(2863.425mil,3602.441mil) on Multi-Layer And Track (2818.15mil,3409.528mil)(2818.15mil,4023.701mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.888mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9766.586mil|Location2.X=9768.253mil|Location1.Y=7215.121mil|Location2.Y=7216.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9766.586mil|Location2.X=9768.253mil|Location1.Y=7215.121mil|Location2.Y=7216.787mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad M1-3(4941.575mil,2416.85mil) on Multi-Layer And Text "S2" (4906.638mil,2365.008mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10021.85mil|Location2.X=10024.1mil|Location1.Y=6326.673mil|Location2.Y=6328.923mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10021.85mil|Location2.X=10024.1mil|Location1.Y=6326.673mil|Location2.Y=6328.923mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.207mil &lt; 1mil) Between Pad Q4-3(5191.386mil,1517mil) on Bottom Layer And Text "Q4" (5168.015mil,1544.743mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.207mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10037.612mil|Location2.X=10039.278mil|Location1.Y=6317.348mil|Location2.Y=6319.014mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10037.612mil|Location2.X=10039.278mil|Location1.Y=6317.348mil|Location2.Y=6319.014mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad Q4-3(5191.386mil,1517mil) on Bottom Layer And Text "R60" (5257.661mil,1496.723mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9802.189mil|Location2.X=9803.856mil|Location1.Y=4653.509mil|Location2.Y=4655.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9802.189mil|Location2.X=9803.856mil|Location1.Y=4653.509mil|Location2.Y=4655.176mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad R1-1(4928.535mil,-140.933mil) on Bottom Layer And Text "U1" (5020.638mil,-207.992mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10479.734mil|Location2.X=10481.4mil|Location1.Y=6544.462mil|Location2.Y=6546.128mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10479.734mil|Location2.X=10481.4mil|Location1.Y=6544.462mil|Location2.Y=6546.128mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad R12-2(5610.488mil,1759.858mil) on Bottom Layer And Track (5558.555mil,1732.303mil)(5629.421mil,1732.303mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10725.234mil|Location2.X=10726.9mil|Location1.Y=6544.709mil|Location2.Y=6546.376mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10725.234mil|Location2.X=10726.9mil|Location1.Y=6544.709mil|Location2.Y=6546.376mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad R13-2(5855.988mil,1759.358mil) on Bottom Layer And Track (5838.173mil,1732.55mil)(5909.039mil,1732.55mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7306.253mil|Location2.X=7307.92mil|Location1.Y=7955.917mil|Location2.Y=7957.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7306.253mil|Location2.X=7307.92mil|Location1.Y=7955.917mil|Location2.Y=7957.583mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad R21-1(2474.409mil,3149.126mil) on Bottom Layer And Text "LCD_SDA" (2533.087mil,3143.732mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10873.833mil|Location2.X=10876.083mil|Location1.Y=6440.244mil|Location2.Y=6442.494mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10873.833mil|Location2.X=10876.083mil|Location1.Y=6440.244mil|Location2.Y=6442.494mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.782mil &lt; 1mil) Between Pad R37-2(6004.488mil,1608.858mil) on Bottom Layer And Text "R37" (6114.784mil,1590.471mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.782mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9598.118mil|Location2.X=9599.785mil|Location1.Y=6607.119mil|Location2.Y=6608.785mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9598.118mil|Location2.X=9599.785mil|Location1.Y=6607.119mil|Location2.Y=6608.785mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad R46-1(4727.989mil,1776.359mil) on Bottom Layer And Track (4697.684mil,1843.866mil)(4803.472mil,1738.078mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4733.476mil|Location2.X=4735.142mil|Location1.Y=6402.462mil|Location2.Y=6404.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4733.476mil|Location2.X=4735.142mil|Location1.Y=6402.462mil|Location2.Y=6404.129mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad T11-1(-90.224mil,1579.725mil) on Bottom Layer And Text "T10" (-66.549mil,1590.303mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4620.483mil|Location2.X=4622.15mil|Location1.Y=6387.097mil|Location2.Y=6388.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4620.483mil|Location2.X=4622.15mil|Location1.Y=6387.097mil|Location2.Y=6388.764mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad T12-1(-205.053mil,1581.727mil) on Bottom Layer And Text "T11" (-179.542mil,1574.938mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.178mil|Location2.X=4505.845mil|Location1.Y=6403.1mil|Location2.Y=6404.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.178mil|Location2.X=4505.845mil|Location1.Y=6403.1mil|Location2.Y=6404.767mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad T13-1(-319.882mil,1579.724mil) on Bottom Layer And Text "T12" (-295.847mil,1590.942mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7398.284mil|Location2.X=7399.951mil|Location1.Y=7905.31mil|Location2.Y=7906.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7398.284mil|Location2.X=7399.951mil|Location1.Y=7905.31mil|Location2.Y=7906.976mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 1mil) Between Pad T8-1(2557.087mil,3065.945mil) on Bottom Layer And Text "R21" (2512.623mil,3075.946mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID0DMASBNLEDCPLFVRDFBHSWDOJH3UMG3C12VA2DH0LPZRHV3OCDTK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7461.35mil|Location2.X=7487.116mil|Location1.Y=7936.85mil|Location2.Y=7974.64mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7461.35mil|Location2.X=7487.116mil|Location1.Y=7936.85mil|Location2.Y=7974.64mil|Absolute=True">Net Antennae: Track (2618.488mil,3133.358mil)(2618.488mil,3244.618mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10606.571mil|Location2.X=10649.272mil|Location1.Y=7228.571mil|Location2.Y=7294.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10606.571mil|Location2.X=10649.272mil|Location1.Y=7228.571mil|Location2.Y=7294.562mil|Absolute=True">Net Antennae: Via (5771.488mil,2432.858mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,4 @@
+Change Value of Parameter Manufacturer Part Number in Part U1 Old=MCP73213-A6BI/MF New=MCP73213-A6SI/MF
+Change Value of Parameter Supplier 1 in Part U1 Old=Digi-Key New=DigiKey
+Change Value of Parameter Supplier Part Number 1 in Part U1 Old=MCP73213-A6BI/MF-ND New=MCP73213-A6SI/MF-ND
+Replace Part U1 LIPO-CHARGING_8.4V_10DFN in E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.SchDoc with LIPO-CHARGING_8.4V_10DFN from LIPO-CHARGING_8.4V_10DFN.SchLib

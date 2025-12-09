@@ -1,0 +1,261 @@
+Change Component Footprint: Designator=R16 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Footprint: Designator=R17 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Footprint: Designator=R18 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Footprint: Designator=R19 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Footprint: Designator=R67 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Footprint: Designator=R68 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Footprint: Designator=R69 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Footprint: Designator=R70 Old Footprint=RES-0603 New Footprint=RES_0R_0603
+Change Component Comment : Designator=Q2 Old Comment=BC848C New Comment=BC848CLT1G
+Change Component Comment : Designator=Q3 Old Comment=BC848C New Comment=BC848CLT1G
+Change Component Comment : Designator=Q4 Old Comment=BC848C New Comment=BC848CLT1G
+Change Component Comment : Designator=Q5 Old Comment=BC848C New Comment=BC848CLT1G
+Change Component Description : Designator=R16 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=R17 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=R18 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=R19 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=R67 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=R68 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=R69 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=R70 Old Description=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New Description=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Component Description : Designator=Q2 Old Description=NPN Silicon AF Transistor, 30�V VCEO, 100�mA IC, SOT23, Reel, Green New Description=
+Change Component Description : Designator=Q3 Old Description=NPN Silicon AF Transistor, 30�V VCEO, 100�mA IC, SOT23, Reel, Green New Description=
+Change Component Description : Designator=Q4 Old Description=NPN Silicon AF Transistor, 30�V VCEO, 100�mA IC, SOT23, Reel, Green New Description=
+Change Component Description : Designator=Q5 Old Description=NPN Silicon AF Transistor, 30�V VCEO, 100�mA IC, SOT23, Reel, Green New Description=
+Change Component Library : Designator=R16 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=R17 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=R18 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=R19 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=R67 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=R68 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=R69 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=R70 Old Library=AAI_PCB.Schematic_Library.SchLib New Library=RES_0R_0603.SchLib
+Change Component Library : Designator=Q2 Old Library=Altium Content Vault New Library=Intercom Gen2 Main PCB.SCHLIB
+Change Component Library : Designator=Q3 Old Library=Altium Content Vault New Library=Intercom Gen2 Main PCB.SCHLIB
+Change Component Library : Designator=Q4 Old Library=Altium Content Vault New Library=Intercom Gen2 Main PCB.SCHLIB
+Change Component Library : Designator=Q5 Old Library=Altium Content Vault New Library=Intercom Gen2 Main PCB.SCHLIB
+Change Managed Component Library Link : Designator=Q2 Old VaultGUID= New VaultGUID= Old ItemGUID=51145F31-AD64-467A-ACBD-0169FFB0D604 New ItemGUID= Old RevisionGUID=726F5C96-0BB4-43B8-BC88-D50526A7C8B5 New RevisionGUID=
+Change Managed Component Library Link : Designator=Q3 Old VaultGUID= New VaultGUID= Old ItemGUID=51145F31-AD64-467A-ACBD-0169FFB0D604 New ItemGUID= Old RevisionGUID=726F5C96-0BB4-43B8-BC88-D50526A7C8B5 New RevisionGUID=
+Change Managed Component Library Link : Designator=Q4 Old VaultGUID= New VaultGUID= Old ItemGUID=51145F31-AD64-467A-ACBD-0169FFB0D604 New ItemGUID= Old RevisionGUID=726F5C96-0BB4-43B8-BC88-D50526A7C8B5 New RevisionGUID=
+Change Managed Component Library Link : Designator=Q5 Old VaultGUID= New VaultGUID= Old ItemGUID=51145F31-AD64-467A-ACBD-0169FFB0D604 New ItemGUID= Old RevisionGUID=726F5C96-0BB4-43B8-BC88-D50526A7C8B5 New RevisionGUID=
+Change component parameters: Designator = "Q2" ("Q2"); Footprint = "onSemi_SOT-23_N"; UniqueID = "\EPQBIXMW" ("\EPQBIXMW")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.infineon.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.infineon.com/dgdl/bc847series_bc848series_bc849series_bc850series.pdf?folderId=db3a304314dca389011541d30fa21656&fileId=db3a304314dca389011541d4630a1657"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.infineon.com/dgdl/SOT23-Package_Overview.pdf?folderId=db3a30431936bc4b0119532290053c66&fileId=db3a30431936bc4b0119533468123c85"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "fT (typ)"; Value = "250 MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Green"; Value = "TRUE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IBM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IC (max)"; Value = "100 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICBO (max)"; Value = "15 nA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "3-Pin Small Outline Transistor Package, 1.3 x 2.9 mm Body, 0.95 mm Pitch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "Apr-08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packing"; Value = "Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "BC848C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ptot (max)"; Value = "330 mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "BC848CLT1GOSDKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "863-BC848CLT1G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCBO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCEO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VEBO (max)"; Value = "6 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q3" ("Q3"); Footprint = "onSemi_SOT-23_N"; UniqueID = "\ZMMOAXQL" ("\ZMMOAXQL")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.infineon.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.infineon.com/dgdl/bc847series_bc848series_bc849series_bc850series.pdf?folderId=db3a304314dca389011541d30fa21656&fileId=db3a304314dca389011541d4630a1657"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.infineon.com/dgdl/SOT23-Package_Overview.pdf?folderId=db3a30431936bc4b0119532290053c66&fileId=db3a30431936bc4b0119533468123c85"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "fT (typ)"; Value = "250 MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Green"; Value = "TRUE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IBM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IC (max)"; Value = "100 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICBO (max)"; Value = "15 nA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "3-Pin Small Outline Transistor Package, 1.3 x 2.9 mm Body, 0.95 mm Pitch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "Apr-08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packing"; Value = "Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "BC848C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ptot (max)"; Value = "330 mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "BC848CLT1GOSDKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "863-BC848CLT1G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCBO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCEO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VEBO (max)"; Value = "6 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q4" ("Q4"); Footprint = "onSemi_SOT-23_N"; UniqueID = "\CTYQGLCW" ("\CTYQGLCW")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.infineon.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.infineon.com/dgdl/bc847series_bc848series_bc849series_bc850series.pdf?folderId=db3a304314dca389011541d30fa21656&fileId=db3a304314dca389011541d4630a1657"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.infineon.com/dgdl/SOT23-Package_Overview.pdf?folderId=db3a30431936bc4b0119532290053c66&fileId=db3a30431936bc4b0119533468123c85"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "fT (typ)"; Value = "250 MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Green"; Value = "TRUE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IBM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IC (max)"; Value = "100 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICBO (max)"; Value = "15 nA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "3-Pin Small Outline Transistor Package, 1.3 x 2.9 mm Body, 0.95 mm Pitch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "Apr-08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packing"; Value = "Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "BC848C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ptot (max)"; Value = "330 mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "BC848CLT1GOSDKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "863-BC848CLT1G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCBO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCEO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VEBO (max)"; Value = "6 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q5" ("Q5"); Footprint = "onSemi_SOT-23_N"; UniqueID = "\PBOSIJMG" ("\PBOSIJMG")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.infineon.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.infineon.com/dgdl/bc847series_bc848series_bc849series_bc850series.pdf?folderId=db3a304314dca389011541d30fa21656&fileId=db3a304314dca389011541d4630a1657"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.infineon.com/dgdl/SOT23-Package_Overview.pdf?folderId=db3a30431936bc4b0119532290053c66&fileId=db3a30431936bc4b0119533468123c85"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "fT (typ)"; Value = "250 MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Green"; Value = "TRUE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IBM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "IC (max)"; Value = "100 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICBO (max)"; Value = "15 nA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ICM (max)"; Value = "200 mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "3-Pin Small Outline Transistor Package, 1.3 x 2.9 mm Body, 0.95 mm Pitch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "Apr-08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packing"; Value = "Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "BC848C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ptot (max)"; Value = "330 mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "BC848CLT1GOSDKR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "863-BC848CLT1G"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCBO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VCEO (max)"; Value = "30 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VEBO (max)"; Value = "6 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R16" ("R16"); Footprint = "RES-0603"; UniqueID = "\AVSWYJOE" ("\AVSWYJOE")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R17" ("R17"); Footprint = "RES-0603"; UniqueID = "\QMASZIWB" ("\QMASZIWB")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R18" ("R18"); Footprint = "RES-0603"; UniqueID = "\BKXRYMHH" ("\BKXRYMHH")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R19" ("R19"); Footprint = "RES-0603"; UniqueID = "\HVXNQUWI" ("\HVXNQUWI")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R67" ("R67"); Footprint = "RES-0603"; UniqueID = "\BILBQQBA" ("\BILBQQBA")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R68" ("R68"); Footprint = "RES-0603"; UniqueID = "\XJAYAEEY" ("\XJAYAEEY")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R69" ("R69"); Footprint = "RES-0603"; UniqueID = "\UTGLBCGP" ("\UTGLBCGP")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R70" ("R70"); Footprint = "RES-0603"; UniqueID = "\EVJINUXX" ("\EVJINUXX")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106051CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP_10uF_0603)
+Add component (AddParameter): Name = "Capacitance"; Value = "10uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/2739682.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/2739682.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://uk.rs-online.com/webdocs/1515/0900766b8151511d.pdf?src-supplier=RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://uk.rs-online.com/webdocs/1515/0900766b8151511d.pdf?src-supplier=RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.farnell.com/datasheets/1918694.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.farnell.com/datasheets/1918694.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "http://components.arrow.com/part/dataview/42932973S8313645N7429?src-supplier=Arrow+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://components.arrow.com/part/dataview/42932973S8313645N7429?src-supplier=Arrow+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://www.verical.com/server-webapp/html/getDatasheet?partID=353664&src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://www.verical.com/server-webapp/html/getDatasheet?partID=353664&src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "http://components.arrow.com/part/dataview/0323_00011321?src-supplier=Arrow+Europe"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "http://components.arrow.com/part/dataview/0323_00011321?src-supplier=Arrow+Europe"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "http://www.farnell.com/datasheets/2739682.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "http://www.farnell.com/datasheets/2739682.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "http://capacitoredge.kemet.com/capedge2/DataSheet?pn=C0603C106M9PAC7867&src-supplier=Avnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "http://capacitoredge.kemet.com/capedge2/DataSheet?pn=C0603C106M9PAC7867&src-supplier=Avnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9Description"; Value = "http://www.kemet.com/kemet/web/homepage/kechome.nsf/weben/ADB5E2666EC6BA90CA2570A50016092E/$file/KEM_C1005_Y5V_SMD.pdf?src-supplier=Avnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9URL"; Value = "http://www.kemet.com/kemet/web/homepage/kechome.nsf/weben/ADB5E2666EC6BA90CA2570A50016092E/$file/KEM_C1005_Y5V_SMD.pdf?src-supplier=Avnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Avnet+Asia"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Avnet+Asia"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Allied+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Allied+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink14Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink14URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink15Description"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C106M9PACTU.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink15URL"; Value = "https://api.kemet.com/component-edge/download/datasheet/C0603C106M9PACTU.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink16Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink16URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink17Description"; Value = "http://www.farnell.com/datasheets/2739682.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink17URL"; Value = "http://www.farnell.com/datasheets/2739682.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink18Description"; Value = "http://www.kemet.com/kemet/web/homepage/kechome.nsf/file/Commercial%20Ceramic%20Chips%20X5R%20Dielectric/$file/KEM_C1006_X5R_SMD.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink18URL"; Value = "http://www.kemet.com/kemet/web/homepage/kechome.nsf/file/Commercial%20Ceramic%20Chips%20X5R%20Dielectric/$file/KEM_C1006_X5R_SMD.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink19Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink19URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink20Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Quest"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink20URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=Quest"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink21Description"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=TTI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink21URL"; Value = "http://www.farnell.com/datasheets/2315129.pdf?src-supplier=TTI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0603C106M9PACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85�C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55�C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "PCB,Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "4000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.32000, 10=0.22000, 50=0.14680, 100=0.12470, 500=0.08804, 1000=0.07704 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "C0603C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "109429"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-15352-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "6.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "6.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=3V3_LDO Pin=C?-2
+Added Member To Class: ClassName=TSI_SAMP_SAMI_V3.4 Member=Component C? 10uF
+Added Room: Name=TSI_SAMP_SAMI_V3.4
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mil New=200mil

@@ -1,0 +1,3 @@
+Change Component Parameter Description in R70 Old=0 Ohms Jumper 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film New=RES SMD 0 OHM JUMPER 1/10W 0603
+Change Value of Parameter Supplier Part Number 1 in Part R70 Old=CR0603AJ/-000EASCT-ND New=A106051CT-ND
+Replace Part R70 RES_0R_0603 in E:\Documents\CanAssist\Altium\TSI_V3.0 REV_1\TSI_SAMP_SAMI_V3.4.SchDoc with RES_0R_0603 from RES_0R_0603.SchLib

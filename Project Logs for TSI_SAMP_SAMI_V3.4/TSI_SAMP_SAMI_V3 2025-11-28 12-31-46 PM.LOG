@@ -1,0 +1,4 @@
+Change Physical Footprint: Designator=J6 Old Footprint=CONN_3.5MM_STEREO_DBL_VERT_TH New Footprint=CONN_3.5MM_STEREO_DBL_VERT_TH
+Change Physical Footprint: Designator=J7 Old Footprint=CONN_3.5MM_STEREO_DBL_VERT_TH New Footprint=CONN_3.5MM_STEREO_DBL_VERT_TH
+Change Physical Footprint: Designator=S1 Old Footprint=SW_SLIDE_RA_TH_DPDT New Footprint=SW_SLIDE_RA_TH_DPDT
+Change Physical Footprint: Designator=VR1 Old Footprint=POT_1K_LOG_TH_RA New Footprint=POT_1K_LOG_TH_RA
