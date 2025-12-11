@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=R3 Old Footprint=J1-0603 New Footprint=Res_0603_M
+Change component parameters: Designator = "R3" ("R3"); Footprint = "J1-0603"; UniqueID = "\YSIDAUEA" ("\YSIDAUEA")
+Change component parameters (AddParameter): Name = "Manufacturer Product Number"; Value = "RC0603JR-072ML"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Avnet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-2.0MGRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "603-RC0603JR-072ML"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "49AK2948"; VariantName = "[No Variations]"
+Added Room: Name=TSI_SAMP_SAMI_V3.4

@@ -1,0 +1,4 @@
+Change Component Comment : Designator=VR2 Old Comment=3V3 1.5A New Comment=3V3 1.5A LDO REG
+Added Pin To Net: NetName=9V_IN Pin=VR2-1
+Added Pin To Net: NetName=3V3_LDO Pin=VR2-3
+Added Pin To Net: NetName=GND Pin=VR2-TAB
