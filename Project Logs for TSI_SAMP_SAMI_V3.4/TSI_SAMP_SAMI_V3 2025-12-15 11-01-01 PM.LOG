@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=C58 Old Footprint=CAP_1uF_1210 New Footprint=CAP_1210_N
+Change Component Footprint: Designator=C59 Old Footprint=CAP_1uF_1210 New Footprint=CAP_1210_N
+Change component parameters: Designator = "C58" ("C58"); Footprint = "CAP_1uF_1210"; UniqueID = "\XQUXJDEW" ("\XQUXJDEW")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Product Number 1"; Value = "C1210C105J5RACTU"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "399-C1210C105J5RAC7800CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C59" ("C59"); Footprint = "CAP_1uF_1210"; UniqueID = "\EYXOJKFL" ("\EYXOJKFL")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "KEMET"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Product Number 1"; Value = "C1210C105J5RACTU"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "399-C1210C105J5RAC7800CT-ND"; VariantName = "[No Variations]"

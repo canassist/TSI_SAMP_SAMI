@@ -1,0 +1,14 @@
+Change Component Footprint: Designator=R62 Old Footprint=RES_470R_0603 New Footprint=Res_0603_M
+Change Component Footprint: Designator=R63 Old Footprint=RES_470R_0603 New Footprint=Res_0603_M
+Change Component Comment : Designator=R62 Old Comment=470 New Comment=470R
+Change Component Comment : Designator=R63 Old Comment=470 New Comment=470R
+Change component parameters: Designator = "R62" ("R62"); Footprint = "RES_470R_0603"; UniqueID = "\ZSESYNRX" ("\ZSESYNRX")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "CRGP0603F470R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A130412CT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R63" ("R63"); Footprint = "RES_470R_0603"; UniqueID = "\CNLWKENH" ("\CNLWKENH")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "CRGP0603F470R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A130412CT-ND"; VariantName = "[No Variations]"

@@ -1,0 +1,56 @@
+Change Component Footprint: Designator=C28 Old Footprint=CAP-0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C5 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C6 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C7 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C8 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C10 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C18 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C23 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C26 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C34 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C40 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C43 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C44 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C45 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C46 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C47 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C50 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C55 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C56 Old Footprint=CAP_0.1uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C36 Old Footprint=CAP_0.01UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C37 Old Footprint=CAP_0.01UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C65 Old Footprint=CAP_0.47uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C66 Old Footprint=CAP_0.47uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C62 Old Footprint=CAP_0.047uF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C11 Old Footprint=CAP_1nF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C13 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C14 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C20 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C24 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C27 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C29 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C30 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C31 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C57 Old Footprint=CAP_1UF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C61 Old Footprint=CAP_3.3nF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C64 Old Footprint=CAP_3.3nF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C51 Old Footprint=CAP_10nF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C52 Old Footprint=CAP_10nF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C48 Old Footprint=CAP_15pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C49 Old Footprint=CAP_15pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C41 Old Footprint=CAP_22pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C42 Old Footprint=CAP_22pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C60 Old Footprint=CAP_100pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C1 Old Footprint=CAP_470pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C2 Old Footprint=CAP_470pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C3 Old Footprint=CAP_470pF_0603 New Footprint=Cap_0603_M
+Change Component Footprint: Designator=C4 Old Footprint=CAP_470pF_0603 New Footprint=Cap_0603_M
+Change component parameters: Designator = "R3" ("R3"); Footprint = "Res_0603_M"; UniqueID = "\YSIDAUEA" ("\YSIDAUEA")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "YAGEO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "RC0603JR-072ML"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 3"; Value = "Avnet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "311-2.0MGRCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "603-RC0603JR-072ML"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 3"; Value = "49AK2948"; VariantName = "[No Variations]"
