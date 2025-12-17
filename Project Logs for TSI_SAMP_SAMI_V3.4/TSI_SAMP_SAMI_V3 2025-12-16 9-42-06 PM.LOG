@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=FB1 Old Footprint=RES-0805 New Footprint=FB_0805
+Change Component Footprint: Designator=FB2 Old Footprint=RES-0805 New Footprint=FB_0805
+Change Component Footprint: Designator=FB3 Old Footprint=RES-0805 New Footprint=FB_0805
+Change Component Footprint: Designator=FB4 Old Footprint=RES-0805 New Footprint=FB_0805
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5.08mm
