@@ -1,0 +1,15 @@
+Change component parameters: Designator = "J11" ("J11"); Footprint = "CONN_10x_3220-10-0300-00"; UniqueID = "\YHODZQDS" ("\YHODZQDS")
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.cnctech.us/pdfs/3220-XX-0300-00_.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "CNC Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "3220-10-0300-00"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1175-1629-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J10" ("J10"); Footprint = "HDRV5W67P0X254_1X5_1270X241X858P"; UniqueID = "\VVYNOBIF" ("\VVYNOBIF")
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/68000.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Geometry.Height"; Value = "8.58mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Amphenol Communication Solutions"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "68000-105HTLF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "609-68000-105HTLF-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "649-68000-105HTLF"; VariantName = "[No Variations]"
