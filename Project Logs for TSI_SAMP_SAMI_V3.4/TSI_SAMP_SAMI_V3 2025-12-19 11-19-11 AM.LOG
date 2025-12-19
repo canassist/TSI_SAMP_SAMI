@@ -1,0 +1,30 @@
+Change Component Footprint: Designator=C32 Old Footprint=KEMT-A-3216-18-2_M New Footprint=CAPMP3.4X1.6_1.8N_KEM-M
+Change Component Footprint: Designator=C33 Old Footprint=KEMT-A-3216-18-2_M New Footprint=CAPMP3.4X1.6_1.8N_KEM-M
+Change Managed Component Library Link : Designator=C32 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=10668A61-8638-4966-A4CC-F73D19D22649 New ItemGUID= Old RevisionGUID=D7764F6D-F92A-494E-858E-798C2288B266 New RevisionGUID=
+Change Managed Component Library Link : Designator=C33 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=10668A61-8638-4966-A4CC-F73D19D22649 New ItemGUID= Old RevisionGUID=D7764F6D-F92A-494E-858E-798C2288B266 New RevisionGUID=
+Change component parameters: Designator = "MK1" ("MK1"); Footprint = "MIC_ELECTRET_CASTLE PAD"; UniqueID = "\TIMYKIOT" ("\TIMYKIOT")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "PUI Audio, Inc."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Product Number"; Value = "AOM-5024L-HD-R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "668-1596-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C32" ("C32"); Footprint = "KEMT-A-3216-18-2_M"; UniqueID = "\IWLFJDNB" ("\IWLFJDNB")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2025 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Kemet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "T491A106K010AT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "399-3684-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "80-T491A106K010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C33" ("C33"); Footprint = "KEMT-A-3216-18-2_M"; UniqueID = "\EQCHBDIN" ("\EQCHBDIN")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2025 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Kemet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "T491A106K010AT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "399-3684-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "80-T491A106K010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5.08mm
