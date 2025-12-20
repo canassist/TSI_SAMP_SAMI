@@ -53,7 +53,6 @@ Used DCodes :
     D49
     D50
     D51
-    D52
 *************************************************************
 
 *************************************************************
@@ -66,6 +65,7 @@ Generating : GROUND
 
 
 Used DCodes :
+    D52
     D53
     D54
     D55
@@ -107,8 +107,6 @@ Used DCodes :
     D91
     D92
     D93
-    D94
-    D95
 *************************************************************
 
 *************************************************************
@@ -121,40 +119,41 @@ Generating : POWER
 
 
 Used DCodes :
+    D52
     D53
-    D54
     D55
-    D56
     D57
+    D58
     D59
     D60
-    D63
+    D61
+    D62
     D64
-    D66
-    D67
+    D65
     D68
     D69
     D70
-    D72
-    D75
+    D71
+    D73
+    D74
     D76
-    D77
     D78
+    D79
     D80
-    D81
     D82
     D84
     D85
     D86
+    D87
     D88
     D89
     D90
     D91
+    D92
+    D94
     D95
     D96
     D97
-    D98
-    D99
 *************************************************************
 
 *************************************************************
@@ -168,7 +167,6 @@ Generating : Bottom Layer
 
 Used DCodes :
     D10
-    D11
     D13
     D14
     D15
@@ -208,7 +206,8 @@ Used DCodes :
     D49
     D50
     D51
-    D52
+    D98
+    D99
     D100
     D101
     D102
@@ -258,12 +257,6 @@ Used DCodes :
     D146
     D147
     D148
-    D149
-    D150
-    D151
-    D152
-    D153
-    D154
 *************************************************************
 
 *************************************************************
@@ -277,8 +270,7 @@ Generating : Bottom Pad Master
 
 Used DCodes :
     D10
-    D11
-    D18
+    D13
     D19
     D20
     D21
@@ -306,9 +298,8 @@ Used DCodes :
     D43
     D44
     D45
-    D46
-    D47
-    D48
+    D98
+    D99
     D100
     D101
     D102
@@ -355,10 +346,6 @@ Used DCodes :
     D143
     D144
     D145
-    D146
-    D147
-    D148
-    D149
 *************************************************************
 
 *************************************************************
@@ -374,7 +361,7 @@ Used DCodes :
     D10
     D11
     D12
-    D18
+    D13
     D19
     D20
     D21
@@ -402,9 +389,6 @@ Used DCodes :
     D43
     D44
     D45
-    D46
-    D47
-    D48
 *************************************************************
 
 *************************************************************
@@ -415,11 +399,12 @@ Generating : Top Overlay
 
 
 Used DCodes :
-    D54
-    D155
-    D156
-    D157
-    D158
+    D52
+    D149
+    D150
+    D151
+    D152
+    D153
 *************************************************************
 
 *************************************************************
@@ -430,7 +415,13 @@ Generating : Bottom Overlay
 
 
 Used DCodes :
-    D54
+    D52
+    D94
+    D149
+    D150
+    D152
+    D154
+    D155
     D156
     D157
     D158
@@ -439,9 +430,6 @@ Used DCodes :
     D161
     D162
     D163
-    D164
-    D165
-    D166
 *************************************************************
 
 *************************************************************
@@ -456,6 +444,9 @@ Generating : Top Solder
 
 
 Used DCodes :
+    D164
+    D165
+    D166
     D167
     D168
     D169
@@ -484,14 +475,6 @@ Used DCodes :
     D192
     D193
     D194
-    D195
-    D196
-    D197
-    D198
-    D199
-    D200
-    D201
-    D202
 *************************************************************
 
 *************************************************************
@@ -506,9 +489,11 @@ Generating : Bottom Solder
 
 
 Used DCodes :
-    D145
+    D121
+    D164
     D167
     D168
+    D169
     D170
     D171
     D172
@@ -581,16 +566,6 @@ Used DCodes :
     D239
     D240
     D241
-    D242
-    D243
-    D244
-    D245
-    D246
-    D247
-    D248
-    D249
-    D250
-    D251
 *************************************************************
 
 *************************************************************
@@ -608,6 +583,7 @@ Used DCodes :
     D10
     D11
     D12
+    D13
 *************************************************************
 
 *************************************************************
@@ -623,7 +599,9 @@ Generating : Bottom Paste
 
 Used DCodes :
     D10
-    D11
+    D13
+    D98
+    D99
     D100
     D101
     D102
@@ -670,10 +648,6 @@ Used DCodes :
     D143
     D144
     D145
-    D146
-    D147
-    D148
-    D149
 *************************************************************
 
 *************************************************************
@@ -684,9 +658,9 @@ Generating : Keep-Out Layer
 
 
 Used DCodes :
-    D54
-    D155
-    D156
+    D52
+    D149
+    D151
 *************************************************************
 
 *************************************************************
@@ -697,124 +671,147 @@ Generating : Mechanical 1
 
 
 Used DCodes :
-    D54
-    D156
-    D158
-    D164
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 2
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_2.gbr
-
-    Adding Layer      : Mechanical 2
-
-
-Used DCodes :
-    D252
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 3
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_3.gbr
-
-    Adding Layer      : Mechanical 3
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 4
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_4.gbr
-
-    Adding Layer      : Mechanical 4
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 29
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_29.gbr
-
-    Adding Layer      : Mechanical 29
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 6
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_6.gbr
-
-    Adding Layer      : Mechanical 6
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 7
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_7.gbr
-
-    Adding Layer      : Mechanical 7
-
-
-Used DCodes :
+    D52
+    D149
+    D150
     D155
-    D156
-    D253
+    D158
+    D242
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 8
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_8.gbr
+Generating : Top Assembly
+      File : TSI_SAMP_SAMI_V3.4_Top_Assembly.gbr
 
-    Adding Layer      : Mechanical 8
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D149
+    D152
+    D158
+*************************************************************
+
+*************************************************************
+Generating : Bottom Assembly
+      File : TSI_SAMP_SAMI_V3.4_Bottom_Assembly.gbr
+
+    Adding Layer      : Bottom Assembly
+
+
+Used DCodes :
+    D52
+    D149
+    D150
+    D152
+    D158
+    D243
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : TSI_SAMP_SAMI_V3.4_Top_Courtyard.gbr
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D149
+    D158
+*************************************************************
+
+*************************************************************
+Generating : Bottom Courtyard
+      File : TSI_SAMP_SAMI_V3.4_Bottom_Courtyard.gbr
+
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+    D149
+    D150
+    D155
+    D158
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : TSI_SAMP_SAMI_V3.4_Top_3D_Body.gbr
+
+    Adding Layer      : Top 3D Body
 
 
 Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 9
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_9.gbr
+Generating : Bottom 3D Body
+      File : TSI_SAMP_SAMI_V3.4_Bottom_3D_Body.gbr
 
-    Adding Layer      : Mechanical 9
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Layer Stack
-      File : TSI_SAMP_SAMI_V3.4_Layer_Stack.gbr
-
-    Adding Layer      : Layer Stack
+    Adding Layer      : Bottom 3D Body
 
 
 Used DCodes :
+    D149
+    D151
+    D244
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 11
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_11.gbr
+Generating : Top Plugging
+      File : TSI_SAMP_SAMI_V3.4_Top_Plugging.gbr
 
-    Adding Layer      : Mechanical 11
+    Adding Layer      : Top Plugging
 
 
 Used DCodes :
+    D245
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 12
-      File : TSI_SAMP_SAMI_V3.4_Mechanical_12.gbr
+Generating : Bottom Plugging
+      File : TSI_SAMP_SAMI_V3.4_Bottom_Plugging.gbr
 
-    Adding Layer      : Mechanical 12
+    Adding Layer      : Bottom Plugging
 
 
 Used DCodes :
+    D245
+*************************************************************
+
+*************************************************************
+Generating : Top Covering
+      File : TSI_SAMP_SAMI_V3.4_Top_Covering.gbr
+
+    Adding Layer      : Top Covering
+
+
+Used DCodes :
+    D246
+*************************************************************
+
+*************************************************************
+Generating : Bottom Covering
+      File : TSI_SAMP_SAMI_V3.4_Bottom_Covering.gbr
+
+    Adding Layer      : Bottom Covering
+
+
+Used DCodes :
+    D246
+*************************************************************
+
+*************************************************************
+Generating : Board Shape
+      File : TSI_SAMP_SAMI_V3.4_Board_Shape.gbr
+
+    Adding Layer      : Board Shape
+
+
+Used DCodes :
+    D149
+    D151
+    D244
 *************************************************************
 
 *************************************************************
@@ -825,10 +822,8 @@ Generating : Mechanical 13
 
 
 Used DCodes :
-    D156
+    D149
     D158
-    D159
-    D164
 *************************************************************
 
 *************************************************************
@@ -849,14 +844,12 @@ Generating : Mechanical 15
 
 
 Used DCodes :
-    D156
-    D159
-    D164
+    D149
 *************************************************************
 
 *************************************************************
 Generating : Top Assembly
-      File : TSI_SAMP_SAMI_V3.4_Top_Assembly.gbr
+      File : TSI_SAMP_SAMI_V3.4_Top_Assembly_1.gbr
 
     Adding Layer      : Top Assembly
 
@@ -866,7 +859,7 @@ Used DCodes :
 
 *************************************************************
 Generating : Bottom Assembly
-      File : TSI_SAMP_SAMI_V3.4_Bottom_Assembly.gbr
+      File : TSI_SAMP_SAMI_V3.4_Bottom_Assembly_1.gbr
 
     Adding Layer      : Bottom Assembly
 
@@ -876,7 +869,7 @@ Used DCodes :
 
 *************************************************************
 Generating : Top 3D Body
-      File : TSI_SAMP_SAMI_V3.4_Top_3D_Body.gbr
+      File : TSI_SAMP_SAMI_V3.4_Top_3D_Body_1.gbr
 
     Adding Layer      : Top 3D Body
 
@@ -886,7 +879,7 @@ Used DCodes :
 
 *************************************************************
 Generating : Top Courtyard
-      File : TSI_SAMP_SAMI_V3.4_Top_Courtyard.gbr
+      File : TSI_SAMP_SAMI_V3.4_Top_Courtyard_1.gbr
 
     Adding Layer      : Top Courtyard
 
@@ -902,13 +895,12 @@ Generating : Mechanical 20
 
 
 Used DCodes :
-    D156
-    D164
+    D149
 *************************************************************
 
 *************************************************************
 Generating : Bottom Courtyard
-      File : TSI_SAMP_SAMI_V3.4_Bottom_Courtyard.gbr
+      File : TSI_SAMP_SAMI_V3.4_Bottom_Courtyard_1.gbr
 
     Adding Layer      : Bottom Courtyard
 
@@ -928,7 +920,7 @@ Used DCodes :
 
 *************************************************************
 Generating : Bottom 3D Body
-      File : TSI_SAMP_SAMI_V3.4_Bottom_3D_Body.gbr
+      File : TSI_SAMP_SAMI_V3.4_Bottom_3D_Body_1.gbr
 
     Adding Layer      : Bottom 3D Body
 
@@ -954,12 +946,9 @@ Generating : Assembly Notes
 
 
 Used DCodes :
-    D156
-    D158
-    D159
-    D164
-    D166
-    D254
+    D94
+    D149
+    D152
 *************************************************************
 
 *************************************************************
@@ -978,7 +967,7 @@ Generating : Profile
 
 
 Used DCodes :
-    D255
+    D247
 *************************************************************
 
 *************************************************************
@@ -987,16 +976,16 @@ Generating : Non-plated through-hole drill file
 
 
 Used DCodes :
+    D248
+    D249
+    D250
+    D251
+    D252
+    D253
+    D254
+    D255
     D256
     D257
-    D258
-    D259
-    D260
-    D261
-    D262
-    D263
-    D264
-    D265
 *************************************************************
 
 *************************************************************
@@ -1005,7 +994,15 @@ Generating : Plated through-hole drill file
 
 
 Used DCodes :
+    D250
+    D258
     D259
+    D260
+    D261
+    D262
+    D263
+    D264
+    D265
     D266
     D267
     D268
@@ -1024,13 +1021,6 @@ Used DCodes :
     D281
     D282
     D283
-    D284
-    D285
-    D286
-    D287
-    D288
-    D289
-    D290
 *************************************************************
 
 *************************************************************
@@ -1043,9 +1033,8 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D158
-    D253
-    D292
+    D94
+    D285
 *************************************************************
 
 *************************************************************
@@ -1058,6 +1047,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D158
+    D94
 *************************************************************
 

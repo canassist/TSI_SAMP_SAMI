@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: TSI_SAMP_SAMI_V3.4.GBR   2025-09-17  9:57:40 AM
+Gerber File Extension Report For: TSI_SAMP_SAMI_V3.4.GBR   2025-12-19  4:32:46 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -20,17 +20,17 @@ Layer Extension     Layer Description
 .gbr                Bottom Paste                            
 .gbr                Keep-Out Layer                          
 .gbr                Mechanical 1                            
-.gbr                Mechanical 2                            
-.gbr                Mechanical 3                            
-.gbr                Mechanical 4                            
-.gbr                Mechanical 29                           
-.gbr                Mechanical 6                            
-.gbr                Mechanical 7                            
-.gbr                Mechanical 8                            
-.gbr                Mechanical 9                            
-.gbr                Layer Stack                             
-.gbr                Mechanical 11                           
-.gbr                Mechanical 12                           
+.gbr                Top Assembly                            
+.gbr                Bottom Assembly                         
+.gbr                Top Courtyard                           
+.gbr                Bottom Courtyard                        
+.gbr                Top 3D Body                             
+.gbr                Bottom 3D Body                          
+.gbr                Top Plugging                            
+.gbr                Bottom Plugging                         
+.gbr                Top Covering                            
+.gbr                Bottom Covering                         
+.gbr                Board Shape                             
 .gbr                Mechanical 13                           
 .gbr                Mechanical 14                           
 .gbr                Mechanical 15                           
