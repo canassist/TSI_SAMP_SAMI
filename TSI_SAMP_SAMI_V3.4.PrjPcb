@@ -2972,7 +2972,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=ADEHFIOS
 
 [Document173]
 DocumentPath=LED_DOME_SAMP_4LED.PcbLib
