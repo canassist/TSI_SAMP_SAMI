@@ -1,0 +1,29 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [TSI_SAMP_SAMI_V3.4.PrjPcb]
+   Generated File[TSI_SAMP_SAMI_V3.4.GTO]
+   Generated File[TSI_SAMP_SAMI_V3.4.GTP]
+   Generated File[TSI_SAMP_SAMI_V3.4.GTS]
+   Generated File[TSI_SAMP_SAMI_V3.4.GTL]
+   Generated File[TSI_SAMP_SAMI_V3.4.GP1]
+   Generated File[TSI_SAMP_SAMI_V3.4.GP2]
+   Generated File[TSI_SAMP_SAMI_V3.4.GBL]
+   Generated File[TSI_SAMP_SAMI_V3.4.GBS]
+   Generated File[TSI_SAMP_SAMI_V3.4.GBP]
+   Generated File[TSI_SAMP_SAMI_V3.4.GBO]
+   Generated File[TSI_SAMP_SAMI_V3.4.GM12]
+   Generated File[TSI_SAMP_SAMI_V3.4.GKO]
+   Generated File[TSI_SAMP_SAMI_V3.4.GPT]
+   Generated File[TSI_SAMP_SAMI_V3.4.GPB]
+   Generated File[TSI_SAMP_SAMI_V3.4.GD1]
+   Generated File[TSI_SAMP_SAMI_V3.4.GG1]
+   Generated File[TSI_SAMP_SAMI_V3.4.GM]
+   Generated File[TSI_SAMP_SAMI_V3.4.RUL]
+   Generated File[TSI_SAMP_SAMI_V3.4.EXTREP]
+   Generated File[TSI_SAMP_SAMI_V3.4.REP]
+
+
+Files Generated   : 20
+Documents Printed : 0
+
+Finished Output Generation At 3:45:09 PM On 2026-01-09

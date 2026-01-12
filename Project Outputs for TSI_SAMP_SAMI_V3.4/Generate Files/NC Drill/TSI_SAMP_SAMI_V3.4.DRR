@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: TSI_SAMP_SAMI_V3.4.PcbDoc   2025-12-19  4:32:52 PM
+NCDrill File Report For: TSI_SAMP_SAMI_V3.4.PcbDoc   2026-01-09  3:17:58 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -8,21 +8,21 @@ ASCII SlotHoles File : TSI_SAMP_SAMI_V3.4-SlotHoles.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.25mm (10mil)                                            Round             191       PTH        1370.25mm (53.95inch)
+T1      0.25mm (10mil)                                            Round             372       PTH        2474.76mm (97.43inch)
 T2      0.381mm (15mil)                                           Round             1         PTH        0.00mm (0.00inch)
-T3      0.4mm (16mil)                                             Round             200       PTH        1689.21mm (66.50inch)
-T4      0.635mm (25mil)                                           Round             2         PTH        4.24mm (0.17inch)
+T3      0.4mm (16mil)                                             Round             202       PTH        1668.73mm (65.70inch)
+T4      0.635mm (25mil)                                           Round             2         PTH        4.34mm (0.17inch)
 T5      0.711mm (28mil)                                           Round             3         PTH        142.33mm (5.60inch)
-T6      0.8mm (31mil)                                             Round             12        PTH        103.80mm (4.09inch)
+T6      0.8mm (31mil)                                             Round             12        PTH        102.44mm (4.03inch)
 T7      0.8mm (31mil)                                             Slot              17        PTH        331.39mm (13.05inch)
 T8      0.92mm (36mil)                                            Round             2         PTH        6.37mm (0.25inch)
 T9      0.92mm (36mil)                                            Slot              1         PTH        1.38mm (0.05inch)
-T10     1mm (39mil)                                               Round             19        PTH        138.93mm (5.47inch)
+T10     1mm (39mil)                                               Round             19        PTH        142.75mm (5.62inch)
 T11     1mm (39mil)                                               Slot              5         PTH        53.07mm (2.09inch)
 T12     1.067mm (42mil)                                           Round             4         PTH        42.25mm (1.66inch)
 T13     1.1mm (43mil)                                             Round             26        PTH        206.14mm (8.12inch)
 T14     1.15mm (45mil)                                            Round             5         PTH        10.16mm (0.40inch)
-T15     1.2mm (47mil)                                             Round             43        PTH        572.98mm (22.56inch)
+T15     1.2mm (47mil)                                             Round             43        PTH        530.71mm (20.89inch)
 T16     1.4mm (55mil)                                             Slot              4         PTH        180.82mm (7.12inch)
 T17     1.5mm (59mil)                                             Round             20        PTH        243.60mm (9.59inch)
 T18     1.5mm (59mil)                                             Slot              8         PTH        117.85mm (4.64inch)
@@ -36,6 +36,6 @@ T25     2.5mm (98mil)                                             Round         
 T26     3.2mm (126mil)                                            Round             3         NPTH       33.26mm (1.31inch)
 T27     3.264mm (129mil)                                          Round             1         NPTH       0.00mm (0.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              589
+Totals                                                                              772
 
 Total Processing Time (hh:mm:ss) : 00:00:01
