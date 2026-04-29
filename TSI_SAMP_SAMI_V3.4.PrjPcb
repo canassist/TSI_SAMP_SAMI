@@ -3200,7 +3200,7 @@ UniqueId=ffa4c410-7b31-40b0-9fac-efd85740ffce
 Description=SAMI_V3.5
 AllowFabrication=1
 ParameterCount=0
-VariationCount=21
+VariationCount=43
 Variation1=Designator=S2|UniqueId=\AJZDPDQP|Kind=1|AlternatePart=
 Variation2=Designator=MK1|UniqueId=\TIMYKIOT|Kind=1|AlternatePart=
 Variation3=Designator=C60|UniqueId=\XRMRDRLN|Kind=1|AlternatePart=
@@ -3222,6 +3222,28 @@ Variation18=Designator=R73|UniqueId=\QUHEBZIO|Kind=1|AlternatePart=
 Variation19=Designator=J9|UniqueId=\KMWFSQHC|Kind=1|AlternatePart=
 Variation20=Designator=R54|UniqueId=\EBNQGMIG|Kind=1|AlternatePart=
 Variation21=Designator=R74|UniqueId=\ZMFITZBD|Kind=1|AlternatePart=
+Variation22=Designator=U6|UniqueId=\XKANMHJN|Kind=1|AlternatePart=
+Variation23=Designator=U7|UniqueId=\ANVMWVYT|Kind=1|AlternatePart=
+Variation24=Designator=U8|UniqueId=\JAPJAYWM|Kind=1|AlternatePart=
+Variation25=Designator=U9|UniqueId=\MTZPNJQL|Kind=1|AlternatePart=
+Variation26=Designator=R75|UniqueId=\PEXRMLRK|Kind=1|AlternatePart=
+Variation27=Designator=R76|UniqueId=\ZTNLPPJD|Kind=1|AlternatePart=
+Variation28=Designator=R77|UniqueId=\JMGYXIKW|Kind=1|AlternatePart=
+Variation29=Designator=R78|UniqueId=\KQDQKYAR|Kind=1|AlternatePart=
+Variation30=Designator=R79|UniqueId=\KVFQPRMD|Kind=1|AlternatePart=
+Variation31=Designator=R80|UniqueId=\YDJLJDJR|Kind=1|AlternatePart=
+Variation32=Designator=R81|UniqueId=\DOQOFFBS|Kind=1|AlternatePart=
+Variation33=Designator=R82|UniqueId=\CWBJTPCT|Kind=1|AlternatePart=
+Variation34=Designator=R83|UniqueId=\VZTGOTBI|Kind=1|AlternatePart=
+Variation35=Designator=R84|UniqueId=\ZZMENAXE|Kind=1|AlternatePart=
+Variation36=Designator=R85|UniqueId=\ZQUEPCLB|Kind=1|AlternatePart=
+Variation37=Designator=R86|UniqueId=\AXRAZHGU|Kind=1|AlternatePart=
+Variation38=Designator=R87|UniqueId=\LSGQVRYT|Kind=1|AlternatePart=
+Variation39=Designator=R88|UniqueId=\EJMLYCBO|Kind=1|AlternatePart=
+Variation40=Designator=R89|UniqueId=\OUQJDGPL|Kind=1|AlternatePart=
+Variation41=Designator=R90|UniqueId=\OCQDLFGI|Kind=1|AlternatePart=
+Variation42=Designator=R91|UniqueId=\YHADONYL|Kind=1|AlternatePart=
+Variation43=Designator=R92|UniqueId=\SUSNGKXF|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
