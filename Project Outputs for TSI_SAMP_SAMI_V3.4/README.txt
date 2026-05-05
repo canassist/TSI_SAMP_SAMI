@@ -12,7 +12,7 @@ Outer Copper: 1/2oz
 
 Inner Copper: 1/2oz
 
-Via Type: Type IV-b (both sides)
+Via Type: Type I-b (both sides)
 
 Final Finish: ENIG
 

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: TSI_SAMP_SAMI_V3.4.PcbDoc   2026-01-09  3:17:58 PM
+NCDrill File Report For: TSI_SAMP_SAMI_V3.4.PcbDoc   2026-05-04  5:05:01 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -8,7 +8,7 @@ ASCII SlotHoles File : TSI_SAMP_SAMI_V3.4-SlotHoles.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.25mm (10mil)                                            Round             372       PTH        2474.76mm (97.43inch)
+T1      0.25mm (10mil)                                            Round             372       PTH        2476.75mm (97.51inch)
 T2      0.381mm (15mil)                                           Round             1         PTH        0.00mm (0.00inch)
 T3      0.4mm (16mil)                                             Round             202       PTH        1668.73mm (65.70inch)
 T4      0.635mm (25mil)                                           Round             2         PTH        4.34mm (0.17inch)
@@ -38,4 +38,4 @@ T27     3.264mm (129mil)                                          Round         
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              772
 
-Total Processing Time (hh:mm:ss) : 00:00:01
+Total Processing Time (hh:mm:ss) : 00:00:00

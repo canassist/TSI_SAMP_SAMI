@@ -1,10 +1,10 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [SAMI_V3.5] of Project [TSI_SAMP_SAMI_V3.4.PrjPcb]
-   Generated File[Bill of Materials-TSI_SAMP_SAMI_V3.4(SAMI_V3.5).xlsx]
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [SAMI_V3.5] of PCB Document [TSI_SAMP_SAMI_V3.4.PcbDoc]
+   Generated File[Pick Place for TSI_SAMP_SAMI_V3.4(SAMI_V3.5).txt]
 
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 3:18:02 PM On 2026-01-09
+Finished Output Generation At 5:05:06 PM On 2026-05-04
